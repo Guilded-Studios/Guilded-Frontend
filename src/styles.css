@@ -42,3 +42,11 @@
 .auth-back{position:absolute;top:25px;left:28px;background:transparent;border:0;color:#c2c3c8;font-size:12px;cursor:pointer}.auth-back:hover{color:#fff}
 @media(max-width:850px){.landing-hero{grid-template-columns:1fr;padding:70px 35px 40px}.landing-copy{margin:auto;text-align:center}.landing-kicker,.landing-cta,.landing-proof{justify-content:center}.landing-copy>p{margin-left:auto;margin-right:auto}.landing-art{height:380px}.landing-features{padding-left:30px;padding-right:30px}}
 @media(max-width:600px){.landing-nav{height:68px;padding:0 17px}.landing-nav nav{display:none}.landing-actions{gap:7px}.landing-actions button{height:37px;padding:0 12px;font-size:11px}.landing-brand{font-size:17px}.landing-brand .brand-mark{width:34px;height:34px;font-size:22px}.landing-hero{padding:62px 20px 25px}.landing-copy h1{font-size:48px;letter-spacing:-2px}.landing-copy>p{font-size:14px}.landing-art{height:310px;transform:scale(.88);margin:-5px -25px}.landing-features{grid-template-columns:1fr;gap:23px;padding:28px 24px 45px}.landing-footer{padding:20px 18px;flex-direction:column;text-align:center}.auth-back{top:14px;left:16px}}
+
+/* Guilded logo asset */
+.brand-icon{width:39px;height:39px;display:block;object-fit:contain;border-radius:11px;flex:0 0 auto}
+.auth-brand .brand-icon{margin-right:2px}
+.landing-brand .brand-icon{width:42px;height:42px;border-radius:12px}
+.loading-brand-icon{margin:0 auto 12px;width:46px;height:46px}
+.brand-icon-button{width:48px;height:48px;padding:0;border:0;border-radius:15px;background:transparent;cursor:pointer;overflow:hidden}
+.brand-icon-button img{width:100%;height:100%;display:block;object-fit:cover;border-radius:15px}
