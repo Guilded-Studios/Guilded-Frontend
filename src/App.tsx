@@ -32,7 +32,7 @@ function Landing({onLogin,onSignup}:{onLogin:()=>void;onSignup:()=>void}){
   <footer className="landing-footer"><span>GUILDED STUDIOS</span><span>In loving memory of Guilded.gg <b>❤</b></span><span>Community, connected.</span></footer>
  </main>
 }
-\nexport default function App(){
+export default function App(){
  const [user,setUser]=useState<User|null>(null),[checking,setChecking]=useState(true),[authMode,setAuthMode]=useState<'register'|'login'|null>(null)
  const socketRef=useRef<Socket|null>(null),[theme,setTheme]=useState<'dark'|'light'>(()=>localStorage.getItem('guilded-theme')==='light'?'light':'dark')
  const [servers,setServers]=useState<Server[]>([]),[server,setServer]=useState<Server|null>(null),[channels,setChannels]=useState<Channel[]>([]),[channel,setChannel]=useState<Channel|null>(null),[messages,setMessages]=useState<Message[]>([])
