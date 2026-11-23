@@ -23,9 +23,9 @@ pnpm dev
 ## Implemented
 - Registration, login, session restoration, and logout using the backend HTTP-only session cookie
 - Server listing, creation, invite-code joining, server overview, and channel creation
-- Channel message history and sending messages through the backend API
+- Channel message history, sending messages, and live message create/edit/delete events through Socket.IO
 - Profile display-name updates
 - Responsive dark/light theme with persistent preference
 
 ## Not implemented yet
-Direct messages, discovery/search, uploads, voice/video, notifications, presence, server member listing, role management, and realtime message updates require additional backend endpoints and/or websocket integration. These are not presented as live features.
+Direct messages, discovery/search, uploads, voice/video, notifications, presence, server member listing, role management, and realtime message updates require additional backend endpoints. These are not presented as live features.
