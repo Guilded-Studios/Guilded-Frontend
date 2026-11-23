@@ -253,3 +253,14 @@
 @media(min-width:1180px){.overview-content{grid-template-columns:minmax(0,1fr) minmax(260px,.72fr)}.overview-main-card:first-child{grid-column:1}.overview-main-card:nth-child(2){grid-column:2;grid-row:1}}
 @media(max-width:800px){.overview-content{grid-template-columns:1fr}.overview-main-card:first-child,.overview-main-card:nth-child(2){grid-column:1;grid-row:auto}}
 @media(max-width:470px){.server-quick-actions{padding:7px}.server-quick-actions button{height:28px}.overview-content{grid-template-columns:1fr}}
+
+
+/* Guilded-style channel categories and member directory */
+.channel-group{margin:7px 0 15px}.channel-category{height:24px;padding:0 6px 0 8px;font-size:9px;letter-spacing:.8px}
+.channel-category button{width:22px;height:22px;border-radius:5px}.channel-category button:hover{background:var(--hover);color:var(--text)}
+.channel-item{height:29px;margin:1px 0;padding:0 8px;gap:9px;border-radius:5px;font-size:11px}.channel-item svg{width:14px;height:14px;flex:none}.channel-item span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.channel-item.chosen{background:#3a3b42;color:#f5c400}
+.members-search{height:36px;max-width:520px;margin:15px 0 20px;padding:0 11px;display:flex;align-items:center;gap:9px;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--muted)}
+.members-search input{flex:1;min-width:0;border:0;outline:0;background:transparent;color:var(--text);font-size:11px}.members-search input::placeholder{color:var(--subtle)}
+.members-page-heading>button:hover{background:var(--hover)}.members-role-group{max-width:760px}
+@media(max-width:600px){.members-search{margin-top:12px}.members-role-group{padding:10px}.channel-category{height:23px}}
