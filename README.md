@@ -5,6 +5,7 @@ The web client for **Guilded**, a community and communication platform by Guilde
 ## Stack
 - React 18 + TypeScript
 - Vite
+- Socket.IO client for realtime messaging
 - Lucide icons
 - Responsive custom CSS
 
