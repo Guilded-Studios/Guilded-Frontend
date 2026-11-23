@@ -111,3 +111,104 @@
 .members-directory-item>span{font-size:10px;color:var(--subtle);text-transform:capitalize}
 @media(max-width:800px){.overview-content{padding:15px}.overview-identity{padding-left:15px;padding-right:15px}.overview-tabs{padding-left:17px}}
 @media(max-width:470px){.overview-cover{height:115px}.overview-identity{min-height:80px;gap:10px}.overview-server-icon{width:61px;height:61px}.overview-identity-copy h1{font-size:15px}.overview-settings{padding:7px}.overview-content{padding:12px}.overview-main-card{padding:13px}.members-page-heading h1{font-size:20px}}
+
+
+/* Compact Guilded desktop proportions and classic charcoal/yellow palette */
+.app-shell{--bg:#292a30;--rail:#202126;--sidebar:#25262c;--panel:#303137;--panel-soft:#35363d;--hover:#3b3c43;--text:#f0f0f1;--muted:#b0b0b5;--subtle:#85868d;--line:rgba(255,255,255,.085);--accent:#f5c400;--accent-strong:#d9ad00}
+.server-rail{width:48px;gap:7px;padding:9px 0 8px}
+.brand-icon-button{width:34px;height:34px;padding:0;border:0;border-radius:9px;background:transparent;display:grid;place-items:center}
+.brand-icon-button img{width:30px;height:30px;object-fit:contain}
+.rail-divider{width:25px;margin:2px 0}
+.rail-icon,.server-icon,.server-add{width:34px;height:34px;border-radius:9px}
+.rail-icon svg{width:17px;height:17px}
+.server-icon{font-size:12px;border-radius:9px}
+.server-add{border-radius:9px}
+.channel-sidebar{width:218px}
+.server-heading{height:52px;padding:0 10px;gap:8px}
+.server-heading-mark{width:29px;height:29px;border-radius:7px}
+.server-heading-copy strong{font-size:12px}
+.server-heading-copy small{font-size:10px}
+.server-sections{padding:7px 8px 6px}
+.server-sections-label{padding:2px 7px 5px;font-size:9px;letter-spacing:.8px}
+.server-section-item{height:27px;padding:0 7px;gap:8px;font-size:11px;border-radius:4px}
+.sidebar-search{height:29px;margin:9px 9px 7px;padding:0 7px;border-radius:5px}
+.sidebar-search input{font-size:11px}
+.sidebar-search kbd{font-size:9px}
+.channel-list{padding:4px 7px}
+.channel-group{margin:6px 0 13px}
+.channel-category{height:22px;padding:0 6px;font-size:9px;letter-spacing:.7px}
+.channel-item{height:27px;gap:8px;padding:0 7px;border-radius:4px;font-size:11px;margin:1px 0}
+.channel-item svg{width:14px;height:14px}
+.user-panel{height:48px;padding:6px 8px;gap:6px}
+.user-panel .avatar{width:28px;height:28px;border-radius:8px;font-size:10px}
+.user-meta strong{font-size:10px}
+.user-meta small{font-size:9px}
+.user-action{width:25px;height:25px}
+.user-action svg{width:14px;height:14px}
+.chat-header{height:49px;padding:0 15px}
+.channel-title{gap:7px}
+.channel-title strong{font-size:12px}
+.channel-topic{font-size:10px}
+.icon-button{width:28px;height:28px}
+.icon-button svg{width:16px;height:16px}
+.member-sidebar{width:205px;padding:0 10px}
+.member-header{height:49px;padding:0 4px}
+.member-header strong{font-size:11px}
+.about-more{border:0;background:transparent;color:var(--muted);letter-spacing:2px}
+.server-about{padding:14px 5px 12px;text-align:left}
+.server-large-mark{width:45px;height:45px;border-radius:9px;margin:0 0 9px;font-size:18px}
+.server-about h3{font-size:12px;margin-bottom:4px}
+.server-about p{font-size:10px;line-height:1.45}
+.about-community{padding:12px 4px;border-bottom:1px solid var(--line)}
+.about-community>span,.member-role-list>span,.server-actions>span{display:block;margin-bottom:9px;color:var(--subtle);font-size:9px;font-weight:700;letter-spacing:.8px}
+.about-stat{display:flex;align-items:center;gap:7px;color:var(--muted)}
+.about-stat svg{width:13px;height:13px}
+.about-stat strong{font-size:11px;color:var(--text)}
+.about-stat small{font-size:10px;color:var(--muted)}
+.about-community>button{display:flex;align-items:center;gap:5px;margin-top:9px;padding:0;border:0;background:transparent;color:var(--muted);font-size:10px}
+.member-role-list{margin:12px 0}
+.member-role-group{margin:10px 0 13px}
+.member-role-group>small{display:block;margin:0 3px 5px;color:var(--subtle);font-size:9px;font-weight:700;letter-spacing:.6px}
+.member-role-group .member{gap:7px;padding:5px 3px;border-radius:5px}
+.member-role-group .member .avatar{width:26px;height:26px;border-radius:7px;font-size:10px}
+.member-role-group .member strong{font-size:10px}
+.member-role-group .member small{font-size:9px}
+.server-actions{margin:12px 0}
+.server-actions button{font-size:10px;padding:6px 4px}
+.guilded-overview{background:#292a30}
+.overview-cover{height:clamp(112px,17vh,165px);background:linear-gradient(110deg,#35363d,#292a30 48%,#37383e)}
+.overview-cover-pattern{opacity:.75;background-image:radial-gradient(#ffffff22 .8px,transparent .9px),linear-gradient(135deg,transparent 48%,#ffffff08 49%,transparent 51%);background-size:13px 13px,46px 46px}
+.overview-identity{min-height:76px;padding:0 18px 9px;gap:11px}
+.overview-server-icon{width:62px;height:62px;margin-top:-23px;border:4px solid var(--bg);border-radius:10px;font-size:24px}
+.overview-identity-copy{padding-top:8px}
+.overview-identity-copy h1{font-size:15px;margin-bottom:3px}
+.overview-identity-copy p{font-size:10px}
+.overview-settings{padding:6px 9px;font-size:10px;border-radius:5px}
+.overview-tabs{height:36px;padding:0 19px;gap:17px}
+.overview-tabs button{font-size:10px}
+.overview-content{max-width:900px;padding:15px 18px 32px;gap:12px}
+.overview-main-card{padding:13px 14px;border-radius:7px}
+.overview-card-heading h2{font-size:12px}
+.overview-card-heading p{font-size:9px}
+.overview-card-heading>button,.overview-empty-event button{padding:6px 8px;font-size:9px;border-radius:5px}
+.overview-empty-event{min-height:67px;padding:10px;border-radius:6px}
+.overview-event-icon{width:31px;height:31px;border-radius:7px;font-size:15px}
+.overview-empty-event strong{font-size:10px}
+.overview-empty-event p{font-size:9px}
+.overview-feed-item{gap:8px;padding:9px 2px}
+.overview-feed-item .avatar{width:26px;height:26px;border-radius:7px}
+.overview-feed-item strong{font-size:10px}
+.overview-feed-item time{font-size:8px}
+.overview-feed-item p{font-size:10px}
+.server-members-page{padding:22px clamp(15px,3vw,34px)}
+.members-page-heading h1{font-size:20px}
+.members-page-heading p,.members-page-heading>button{font-size:10px}
+.members-role-group h2{font-size:9px}
+.members-directory-item{padding:8px 6px}
+.members-directory-item .avatar{width:30px;height:30px;border-radius:8px}
+.members-directory-item strong{font-size:10px}
+.members-directory-item small,.members-directory-item>span{font-size:9px}
+@media(max-width:1050px){.member-sidebar{width:190px}.channel-sidebar{width:205px}}
+@media(max-width:800px){.member-sidebar{display:none}.channel-sidebar{width:205px}}
+@media(max-width:600px){.server-rail{width:48px}.channel-sidebar{width:205px}.chat-header{height:49px}}
+@media(max-width:470px){.server-rail{width:48px}.channel-sidebar{left:48px;width:min(225px,calc(100vw - 48px))}}
