@@ -28,4 +28,4 @@ pnpm dev
 - Responsive dark/light theme with persistent preference
 
 ## Not implemented yet
-Direct messages, discovery/search, uploads, voice/video, notifications, presence, server member listing, role management, and realtime message updates require additional backend endpoints. These are not presented as live features.
+Direct messages, discovery/search, uploads, voice/video, notifications, presence, server member listing, and role management require additional backend endpoints. These are not presented as live features.
