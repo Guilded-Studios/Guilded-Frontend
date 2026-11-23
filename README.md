@@ -2,8 +2,6 @@
 
 The web client for **Guilded**, a community and communication platform by Guilded Studios.
 
-Built alongside [Guilded Backend](https://github.com/Guilded-Studios/Guilded-Backend), with a familiar community-chat layout, a distinct Guilded visual identity, and selectable dark and light themes.
-
 ## Stack
 - React 18 + TypeScript
 - Vite
@@ -20,11 +18,14 @@ pnpm dev
 ```
 
 ## Environment
-| Variable | Description | Default |
-| --- | --- | --- |
-| `VITE_API_URL` | Guilded Backend API base URL | `http://localhost:4000/api/v1` |
+`VITE_API_URL` is the public Guilded Backend API base URL (defaults to `http://localhost:4000/api/v1`). Never put database credentials, signing secrets, or other server-only secrets in frontend environment variables.
 
-Only public configuration belongs in `VITE_*` variables. Never put database credentials or server secrets in frontend environment variables.
+## Implemented
+- Registration, login, session restoration, and logout using the backend HTTP-only session cookie
+- Server listing, creation, invite-code joining, server overview, and channel creation
+- Channel message history and sending messages through the backend API
+- Profile display-name updates
+- Responsive dark/light theme with persistent preference
 
-## Current status
-The initial shell includes server and channel navigation, a chat view, a member list, a local demo message composer, and a persistent light/dark theme toggle. Sample content is placeholder data; authentication and live backend integration are upcoming.
+## Not implemented yet
+Direct messages, discovery/search, uploads, voice/video, notifications, presence, server member listing, role management, and realtime message updates require additional backend endpoints and/or websocket integration. These are not presented as live features.
