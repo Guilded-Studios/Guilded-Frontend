@@ -30,7 +30,7 @@ export default function App() {
   const [search,setSearch] = useState('')
   const [showMembers,setShowMembers] = useState(true)
   const [notice,setNotice] = useState('')
-  const [nav,setNav] = useState('Servers')
+  const [,setNav] = useState('Servers')
   const filteredMembers = useMemo(() => members.filter(m => m.name.toLowerCase().includes(search.toLowerCase())),[search])
   function toggleTheme() { const next = theme === 'dark' ? 'light' : 'dark'; setTheme(next); localStorage.setItem('guilded-theme',next) }
   function sendMessage(event: FormEvent<HTMLFormElement>) {
