@@ -50,3 +50,64 @@
 .loading-brand-icon{margin:0 auto 12px;width:46px;height:46px}
 .brand-icon-button{width:48px;height:48px;padding:0;border:0;border-radius:15px;background:transparent;cursor:pointer;overflow:hidden}
 .brand-icon-button img{width:100%;height:100%;display:block;object-fit:cover;border-radius:15px}
+
+
+/* Guilded-inspired server workspace and overview */
+.server-sections{padding:9px 10px 5px;border-bottom:1px solid var(--line)}
+.server-sections-label{display:block;padding:3px 8px 7px;color:var(--subtle);font-size:10px;font-weight:800;letter-spacing:1px}
+.server-section-item{width:100%;height:31px;display:flex;align-items:center;gap:9px;padding:0 9px;border:0;border-radius:6px;background:transparent;color:var(--muted);font-size:12px;text-align:left}
+.server-section-item:hover{background:var(--hover);color:var(--text)}
+.server-section-item.active{background:var(--hover);color:var(--text);font-weight:700}
+.server-section-item>span{flex:1}
+.server-section-item small{font-size:10px;color:var(--subtle)}
+.guilded-overview{flex:1;min-height:0;overflow:auto;background:var(--bg)}
+.overview-cover{height:clamp(125px,21vh,205px);position:relative;overflow:hidden;background:linear-gradient(115deg,#30323b,#20222a 48%,#34343b)}
+.overview-cover:before,.overview-cover:after{content:"";position:absolute;border:1px solid #ffffff0b;border-radius:50%;width:470px;height:240px;transform:rotate(-20deg);left:10%;top:-30%}
+.overview-cover:after{width:650px;height:300px;left:36%;top:12%;transform:rotate(18deg)}
+.overview-cover-pattern{position:absolute;inset:0;background-image:radial-gradient(#ffffff18 1px,transparent 1px);background-size:17px 17px;opacity:.35}
+.overview-cover-action{position:absolute;right:18px;bottom:14px;display:flex;align-items:center;gap:7px;padding:8px 12px;border:1px solid #ffffff2a;border-radius:7px;background:#17181dcc;color:#fff;font-size:11px}
+.overview-identity{min-height:92px;padding:0 24px 12px;display:flex;align-items:center;gap:15px;border-bottom:1px solid var(--line)}
+.overview-server-icon{width:74px;height:74px;margin-top:-27px;z-index:1;flex:none;border:5px solid var(--bg);border-radius:16px;background:linear-gradient(145deg,#f8d84a,#d5a900);display:grid;place-items:center;color:#fff;font:700 29px 'Space Grotesk';box-shadow:0 6px 22px #0004}
+.overview-identity-copy{min-width:0;flex:1;padding-top:10px}
+.overview-identity-copy h1{font:700 19px 'Space Grotesk';margin:0 0 5px}
+.overview-identity-copy p{font-size:11px;color:var(--muted);margin:0}
+.overview-settings{margin-top:12px;border:1px solid var(--line);border-radius:7px;background:var(--panel);color:var(--text);padding:8px 12px;font-size:11px}
+.overview-tabs{height:45px;display:flex;align-items:stretch;gap:22px;padding:0 25px;border-bottom:1px solid var(--line)}
+.overview-tabs button{position:relative;border:0;background:transparent;color:var(--muted);font-size:11px;padding:0 2px}
+.overview-tabs button.selected{color:var(--text);font-weight:700}
+.overview-tabs button.selected:after{content:"";position:absolute;bottom:-1px;left:0;right:0;height:2px;background:var(--accent)}
+.overview-tabs button span{margin-left:5px;color:var(--subtle)}
+.overview-content{max-width:980px;margin:0 auto;padding:22px 24px 45px;display:grid;gap:18px}
+.overview-main-card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:17px 18px}
+.overview-card-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:14px}
+.overview-card-heading h2{font:600 14px 'Space Grotesk';margin:0 0 4px}
+.overview-card-heading p{font-size:10px;color:var(--muted);margin:0}
+.overview-card-heading>button,.overview-empty-event button{border:1px solid var(--line);border-radius:6px;background:var(--panel-soft);color:var(--text);padding:7px 10px;font-size:10px}
+.overview-empty-event{min-height:84px;display:flex;align-items:center;gap:13px;padding:14px;border-radius:8px;background:var(--panel-soft)}
+.overview-event-icon{width:38px;height:38px;border-radius:9px;background:color-mix(in srgb,var(--accent) 15%,var(--panel));color:var(--accent);display:grid;place-items:center;font-size:19px;flex:none}
+.overview-empty-event strong{font-size:11px}
+.overview-empty-event p{font-size:10px;line-height:1.5;color:var(--muted);margin:4px 0 0}
+.overview-empty-event button{margin-top:9px}
+.overview-feed-item{display:flex;gap:10px;padding:12px 3px;border-top:1px solid var(--line)}
+.overview-feed-item .avatar{width:31px;height:31px;border-radius:10px}
+.overview-feed-item>div{min-width:0;flex:1}
+.overview-feed-item strong{font-size:11px}
+.overview-feed-item time{display:block;font-size:9px;color:var(--subtle);margin-top:3px}
+.overview-feed-item p{font-size:11px;line-height:1.5;color:var(--text);margin:6px 0 0;overflow-wrap:anywhere}
+.server-members-page{flex:1;overflow:auto;padding:27px clamp(18px,4vw,46px);background:var(--bg)}
+.members-page-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.members-page-heading span{font-size:9px;letter-spacing:1.3px;font-weight:800;color:var(--subtle)}
+.members-page-heading h1{font:700 24px 'Space Grotesk';margin:5px 0}
+.members-page-heading p{font-size:11px;color:var(--muted);margin:0}
+.members-page-heading>button{display:flex;align-items:center;gap:7px;border:1px solid var(--line);border-radius:7px;background:var(--panel);color:var(--text);padding:9px 12px;font-size:10px}
+.members-role-group{max-width:720px;margin:22px 0}
+.members-role-group h2{font-size:10px;letter-spacing:1px;color:var(--muted);margin:0 0 9px}
+.members-role-group h2 span{color:var(--subtle);margin-left:5px}
+.members-directory-item{display:flex;align-items:center;gap:11px;padding:10px 8px;border-bottom:1px solid var(--line)}
+.members-directory-item .avatar{width:36px;height:36px}
+.members-directory-item>div{display:flex;flex-direction:column;gap:3px;flex:1}
+.members-directory-item strong{font-size:11px}
+.members-directory-item small{font-size:10px;color:var(--muted)}
+.members-directory-item>span{font-size:10px;color:var(--subtle);text-transform:capitalize}
+@media(max-width:800px){.overview-content{padding:15px}.overview-identity{padding-left:15px;padding-right:15px}.overview-tabs{padding-left:17px}}
+@media(max-width:470px){.overview-cover{height:115px}.overview-identity{min-height:80px;gap:10px}.overview-server-icon{width:61px;height:61px}.overview-identity-copy h1{font-size:15px}.overview-settings{padding:7px}.overview-content{padding:12px}.overview-main-card{padding:13px}.members-page-heading h1{font-size:20px}}
