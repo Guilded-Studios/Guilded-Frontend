@@ -212,3 +212,44 @@
 @media(max-width:800px){.member-sidebar{display:none}.channel-sidebar{width:205px}}
 @media(max-width:600px){.server-rail{width:48px}.channel-sidebar{width:205px}.chat-header{height:49px}}
 @media(max-width:470px){.server-rail{width:48px}.channel-sidebar{left:48px;width:min(225px,calc(100vw - 48px))}}
+
+
+/* Detailed Guilded desktop replica pass */
+.server-quick-actions{display:grid;grid-template-columns:1fr 1fr;gap:7px;padding:8px 9px 10px;border-bottom:1px solid var(--line)}
+.server-quick-actions button{height:29px;display:flex;align-items:center;justify-content:center;gap:6px;border:1px solid var(--line);border-radius:5px;background:#34353b;color:var(--text);font-size:10px;font-weight:650}
+.server-quick-actions button:hover{background:#414249;border-color:#ffffff22}
+.server-quick-actions button:disabled{opacity:.45;cursor:not-allowed}
+.server-sections{padding-top:9px;padding-bottom:9px}
+.server-sections-label{padding-left:7px;padding-bottom:5px}
+.server-section-item{height:26px;font-size:10.5px}
+.channel-list{padding-top:8px}
+.channel-category{height:23px;font-size:9px;font-weight:750;letter-spacing:.65px}
+.channel-item{height:26px;font-size:10.5px;color:#c5c5c9}
+.channel-item.chosen{background:#3a3b42;color:#fff}
+.channel-item.chosen svg{color:#f5c400}
+.member-sidebar{overflow-y:auto;overscroll-behavior:contain}
+.member-header{position:sticky;top:0;z-index:1;background:var(--sidebar)}
+.server-about{padding-top:10px}
+.server-large-mark{box-shadow:0 3px 12px #0003}
+.about-community{display:flex;flex-direction:column;gap:1px}
+.about-community>span{margin-bottom:7px}
+.about-stat{padding:3px 0}
+.member-role-list{padding-bottom:10px}
+.member-role-group .member:hover{background:#ffffff09}
+.guilded-overview{scrollbar-width:thin}
+.overview-cover{height:clamp(120px,18vh,175px)}
+.overview-identity{position:relative}
+.overview-tabs{background:var(--bg)}
+.overview-content{grid-template-columns:minmax(0,1.25fr) minmax(220px,.75fr);align-items:start;max-width:1100px;padding-top:17px;gap:13px}
+.overview-main-card{min-width:0}
+.overview-main-card:first-child{grid-column:1/-1}
+.overview-main-card:nth-child(2){grid-column:1/-1}
+.overview-card-heading>button{white-space:nowrap}
+.overview-empty-event{background:#292a30;border:1px solid #ffffff0a}
+.overview-feed-item{background:transparent}
+.members-role-group{border:1px solid var(--line);border-radius:7px;padding:12px 13px;background:var(--panel)}
+.members-role-group h2{margin-bottom:8px}
+.members-directory-item:last-child{border-bottom:0}
+@media(min-width:1180px){.overview-content{grid-template-columns:minmax(0,1fr) minmax(260px,.72fr)}.overview-main-card:first-child{grid-column:1}.overview-main-card:nth-child(2){grid-column:2;grid-row:1}}
+@media(max-width:800px){.overview-content{grid-template-columns:1fr}.overview-main-card:first-child,.overview-main-card:nth-child(2){grid-column:1;grid-row:auto}}
+@media(max-width:470px){.server-quick-actions{padding:7px}.server-quick-actions button{height:28px}.overview-content{grid-template-columns:1fr}}
