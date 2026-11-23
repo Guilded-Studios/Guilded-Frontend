@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState, useRef, type FormEvent } from 'react'
 import { io, type Socket } from 'socket.io-client'
-import { Activity, Bell, ChevronDown, Compass, Hash, Inbox, LogOut, MessageCircle, Moon, Plus, Search, Send, Settings, ShieldCheck, Sun, Users, X, ArrowRight, Lock, Mail, AtSign, Server as ServerIcon, Copy, Check, Menu } from 'lucide-react'
+import { Activity, Bell, ChevronDown, Compass, Hash, Inbox, LogOut, MessageCircle, Moon, Plus, Search, Send, Settings, Sun, Users, X, ArrowRight, Lock, Mail, AtSign, Server as ServerIcon, Copy, Check, Menu } from 'lucide-react'
 
 type User={id:string;username:string;displayName:string|null;email:string;createdAt:string}
 type Channel={id:string;name:string;type:'TEXT'|'ANNOUNCEMENT';position:number}
