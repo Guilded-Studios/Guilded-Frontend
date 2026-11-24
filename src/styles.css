@@ -446,3 +446,56 @@
 .settings-destination-card>p{margin:4px 0 19px}
 .settings-destination-card .primary-button{width:auto;min-width:170px}
 @media(max-width:650px){.modal-card:has(.server-settings-layout){width:calc(100vw - 16px);max-height:calc(100vh - 16px)}.server-settings-layout{grid-template-columns:145px minmax(0,1fr);min-height:0;max-height:calc(100vh - 16px)}.server-settings-nav{padding:18px 7px 10px}.settings-server-identity{padding:4px 2px 15px}.settings-server-identity strong{font-size:10px}.server-settings-nav>button{height:auto;min-height:37px;padding:7px 6px;gap:6px;font-size:9px}.server-settings-content{padding:35px 14px 18px}.server-settings-content h2{font-size:18px}.settings-section-card{padding:13px}}
+
+
+/* Guilded-style full-page server settings */
+.channel-sidebar.settings-hidden{display:none}
+.settings-workspace-nav{width:240px;min-width:240px;display:flex;flex-direction:column;gap:3px;padding:14px 10px;background:#202125;border-right:1px solid #151619;overflow:auto}
+.settings-workspace-server{display:flex;align-items:center;gap:10px;padding:4px 7px 18px;margin-bottom:8px;border-bottom:1px solid #35363b}
+.settings-workspace-server>div{display:flex;flex-direction:column;gap:3px;min-width:0}
+.settings-workspace-server strong{font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.settings-workspace-server small,.settings-workspace-label{font-size:9px;font-weight:750;letter-spacing:.8px;color:#8f929a}
+.settings-workspace-label{padding:8px 8px 5px}
+.settings-workspace-nav>button{height:34px;display:flex;align-items:center;gap:9px;padding:0 9px;border:0;border-radius:5px;background:transparent;color:#b8bac1;text-align:left;font-size:11px}
+.settings-workspace-nav>button:hover{background:#2e3035;color:#fff}
+.settings-workspace-nav>button.selected{background:#3b3d43;color:#fff}
+.settings-workspace-nav>button.selected svg{color:#f5c400}
+.settings-workspace-nav>button.settings-back-button{margin-top:auto;border-top:1px solid #36373c;border-radius:0;height:44px;color:#9da0a8}
+.guilded-settings-page{flex:1;min-width:0;min-height:0;display:flex;justify-content:center;overflow:hidden;background:#242529}
+.guilded-settings-scroll{width:min(100%,900px);padding:18px 26px 34px;overflow-y:auto}
+.settings-banner{height:132px;overflow:hidden;border:1px solid #17181c;border-radius:3px;background:linear-gradient(160deg,#08090b 0%,#111319 60%,#34363a 60.2%,#202226 100%);position:relative}
+.settings-banner:after{content:"";position:absolute;right:8%;top:-45px;width:150px;height:220px;background:linear-gradient(150deg,transparent 40%,#aeb0b4 41%,#d2d3d5 58%,transparent 59%);opacity:.55;transform:rotate(28deg)}
+.settings-banner-art{position:absolute;left:18px;bottom:14px;display:flex;align-items:center;gap:12px;z-index:1}
+.settings-banner-emblem{width:48px;height:48px;display:grid;place-items:center;border:3px solid #e7e8eb;border-radius:50%;background:#1e335b;color:white;font-weight:800;font-size:20px}
+.settings-banner-title{display:flex;flex-direction:column;gap:4px}
+.settings-banner-title strong{font-size:14px;color:#fff}.settings-banner-title small{font-size:9px;color:#c4c7ce;letter-spacing:1px}
+.settings-breadcrumb{height:38px;display:flex;align-items:center;gap:9px;border-bottom:1px solid #3a3b40;color:#9da0a8;font-size:10px}
+.settings-breadcrumb strong{color:#e5e6e8}
+.guilded-settings-rows{padding:12px 0 24px;display:flex;flex-direction:column;gap:6px}
+.settings-warning{display:flex;align-items:center;gap:10px;padding:10px 12px;margin-bottom:5px;border:1px solid #54452b;border-radius:4px;background:#342d22;color:#e5b85c}
+.settings-warning>span{font-size:17px}.settings-warning div{display:flex;flex-direction:column;gap:2px}
+.settings-warning strong{font-size:10px}.settings-warning small{font-size:9px;color:#c4aa7c}
+.guilded-setting-row{min-height:51px;display:flex;align-items:center;gap:11px;padding:8px 10px;background:#303136;border:1px solid #202125;border-radius:3px}
+.setting-row-icon{width:20px;min-width:20px;display:grid;place-items:center;color:#aeb1b8}
+.setting-row-copy{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}
+.setting-row-copy strong{font-size:10px;color:#e9e9eb;font-weight:650}
+.setting-row-copy small{font-size:9px;color:#9b9ea6;line-height:1.35}
+.guilded-setting-row input,.guilded-setting-row select{width:140px;max-width:36%;height:29px;padding:0 9px;border:1px solid #1b1c20;border-radius:3px;background:#202125;color:#e7e8eb;font-size:10px;outline:none}
+.guilded-setting-row input:focus,.guilded-setting-row select:focus{border-color:#b99b25}
+.setting-row-value{font-size:10px;color:#b9bbc2}
+.guilded-setting-row>button{height:27px;padding:0 10px;border:1px solid #1c1d20;border-radius:3px;background:#25262a;color:#c8c9ce;font-size:9px}
+.guilded-setting-row.danger-row>button{border-color:#67383b;background:#48292c;color:#f09a9e}
+.settings-page-actions{display:flex;justify-content:flex-end;padding-top:5px}
+.settings-save-button{height:31px;padding:0 18px;border:0;border-radius:3px;background:#f5c400;color:#191919;font-size:10px;font-weight:750}
+.settings-save-button:disabled{opacity:.55}
+.settings-section-heading{display:flex;flex-direction:column;gap:5px;padding:9px 3px 12px}
+.settings-section-heading strong{font-size:13px}.settings-section-heading small{font-size:10px;color:#999ca4}
+.settings-info-sidebar{padding:13px 2px 15px;border-bottom:1px solid #3a3b40}
+.settings-info-server-icon{width:42px;height:42px;display:grid;place-items:center;margin-bottom:8px;border-radius:9px;background:#f5c400;color:#171717;font-size:17px;font-weight:800}
+.settings-info-sidebar>strong{font-size:11px}.settings-info-sidebar>p{margin:4px 0 11px;color:#a2a5ad;font-size:9px;line-height:1.5}
+.settings-info-sidebar>small{display:block;margin:10px 0 7px;color:#92959d;font-size:8px;font-weight:750;letter-spacing:.8px}
+.settings-info-divider{height:1px;margin:10px 0;background:#3b3c41}
+.settings-info-stat{display:flex;align-items:center;gap:7px;padding:5px 0;color:#b9bbc2;font-size:9px}
+.settings-owner-row{display:flex;align-items:center;gap:8px}.settings-owner-row .avatar{width:25px;height:25px}.settings-owner-row strong{font-size:9px}
+@media(max-width:900px){.settings-workspace-nav{width:190px;min-width:190px}.guilded-settings-scroll{padding:14px 15px}}
+@media(max-width:650px){.settings-workspace-nav{width:145px;min-width:145px;padding:10px 6px}.settings-workspace-nav>button{font-size:9px;padding:0 6px}.guilded-settings-scroll{padding:10px}.settings-banner{height:100px}.guilded-setting-row{gap:6px;padding:7px}.guilded-setting-row input,.guilded-setting-row select{width:105px}.setting-row-copy small{font-size:8px}}
