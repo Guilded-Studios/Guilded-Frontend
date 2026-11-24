@@ -1095,3 +1095,27 @@
 .guilded-settings-rows .hub-muted-button{border-color:#45464d!important;background:#292a2f!important;color:#c1c2c7!important}
 @media(max-width:760px){.guilded-settings-rows .hub-grid{grid-template-columns:minmax(0,1fr)}.guilded-settings-rows .hub-card{padding:14px}.guilded-settings-rows .hub-permissions{grid-template-columns:1fr 1fr}}
 @media(max-width:480px){.guilded-settings-rows .hub-heading h1{font-size:18px}.guilded-settings-rows .hub-tabs{gap:12px;overflow-x:auto}.guilded-settings-rows .hub-tabs button{white-space:nowrap}.guilded-settings-rows .hub-permissions{grid-template-columns:1fr}.guilded-settings-rows .hub-person{flex-wrap:wrap}.guilded-settings-rows .hub-person select{max-width:100%}}
+
+
+/* Unified Guilded gold button system — settings workspace */
+.guilded-settings-page button{font-family:inherit;transition:background-color .16s ease,border-color .16s ease,color .16s ease,box-shadow .16s ease}
+.guilded-settings-page .guilded-settings-nav .settings-nav-group>button{border:1px solid transparent;background:transparent;color:#b9bbc1}
+.guilded-settings-page .guilded-settings-nav .settings-nav-group>button:hover{background:#35363b;color:#f5f5f6}
+.guilded-settings-page .guilded-settings-nav .settings-nav-group>button.active{border-color:#66551e;background:#40371f;color:#f3d36b;box-shadow:inset 2px 0 #e8b923}
+.guilded-settings-page .settings-topbar-back{border:1px solid #5d4d20;background:#39321f;color:#efd16b}
+.guilded-settings-page .settings-topbar-back:hover{border-color:#b18e25;background:#4a3e21;color:#ffe28a}
+.guilded-settings-page .guilded-setting-row button,.guilded-settings-page .settings-page-actions button{border:1px solid #8e7428;border-radius:5px;background:#d5ad36;color:#211b0b;font-weight:750}
+.guilded-settings-page .guilded-setting-row button:hover:not(:disabled),.guilded-settings-page .settings-page-actions button:hover:not(:disabled){border-color:#f2d36d;background:#edc653;color:#211b0b}
+.guilded-settings-page .guilded-setting-row.danger-row button{border-color:#854247;background:#482d31;color:#f1b5b8}
+.guilded-settings-page .guilded-setting-row.danger-row button:hover:not(:disabled){background:#60363b;color:#ffd1d2}
+.guilded-settings-page .guilded-settings-rows button:not(.hub-tabs button){border-color:#806923;background:#40371f;color:#f0d36e}
+.guilded-settings-page .guilded-settings-rows button:not(.hub-tabs button):hover:not(:disabled){border-color:#b3922d;background:#514322;color:#ffe38b}
+.guilded-settings-page .guilded-settings-rows .hub-form button,.guilded-settings-page .guilded-settings-rows .hub-inline-form button,.guilded-settings-page .guilded-settings-rows .hub-role button,.guilded-settings-page .guilded-settings-rows .hub-person button,.guilded-settings-page .guilded-settings-rows .hub-actions button{min-height:31px;border:1px solid #927626;border-radius:4px;background:#d2aa34;color:#211b0b;font-weight:800}
+.guilded-settings-page .guilded-settings-rows .hub-form button:hover:not(:disabled),.guilded-settings-page .guilded-settings-rows .hub-inline-form button:hover:not(:disabled),.guilded-settings-page .guilded-settings-rows .hub-role button:hover:not(:disabled),.guilded-settings-page .guilded-settings-rows .hub-person button:hover:not(:disabled),.guilded-settings-page .guilded-settings-rows .hub-actions button:hover:not(:disabled){border-color:#f0d16a;background:#edc653;color:#211b0b;box-shadow:0 2px 8px #0003}
+.guilded-settings-page .guilded-settings-rows .hub-tabs button{border:0;border-bottom:2px solid transparent;background:transparent;color:#a5a7ae}
+.guilded-settings-page .guilded-settings-rows .hub-tabs button:hover{background:#35363b;color:#fff}
+.guilded-settings-page .guilded-settings-rows .hub-tabs button.active{border-bottom-color:#e8b923;background:transparent;color:#f4d15a}
+.guilded-settings-page .guilded-settings-rows .hub-muted-button,.guilded-settings-page .guilded-settings-rows button.hub-muted-button{border-color:#55565d!important;background:#303137!important;color:#d0d1d5!important}
+.guilded-settings-page .guilded-settings-rows .hub-muted-button:hover:not(:disabled){border-color:#777980!important;background:#3c3d44!important;color:#fff!important}
+.guilded-settings-page button:disabled{cursor:not-allowed;opacity:.48;filter:saturate(.55)}
+.guilded-settings-page button:focus-visible{outline:2px solid #f0cc58;outline-offset:2px}
