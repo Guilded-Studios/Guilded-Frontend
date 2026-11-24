@@ -1173,3 +1173,6 @@
 .dm-requests-page .hub-card{background:var(--panel);border-color:var(--line)}
 @media(max-width:760px){.dm-page-heading{align-items:flex-start;flex-direction:column;padding:18px 15px 12px}.dm-workspace{grid-template-columns:220px minmax(0,1fr);height:calc(100% - 130px)}.dm-requests-page{grid-template-columns:1fr;padding:0 14px}}
 @media(max-width:560px){.dm-workspace{grid-template-columns:1fr;height:calc(100% - 130px)}.dm-list-sidebar{max-height:42%;border-right:0;border-bottom:1px solid var(--line)}.dm-chat-panel{min-height:320px}.dm-chat-feed{padding:12px}.dm-composer{margin:8px 10px 12px}.dm-page-tabs{width:100%}.dm-page-tabs button{flex:1;justify-content:center}}
+
+.hub-page:has(.dm-page-heading){display:flex;flex-direction:column;padding:0;overflow:hidden}
+.dm-workspace{height:auto;flex:1}
