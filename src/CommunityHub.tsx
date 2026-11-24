@@ -7,7 +7,7 @@ type ServerInfo = { id:string; name:string }
 type PresenceInfo = { id:string; status:'ONLINE'|'IDLE'|'DND'|'OFFLINE' }
 type Props = { apiBase:string; server:ServerInfo|null; user:Person; presence:Record<string,PresenceInfo>; mode:'messages'|'management'; initialTab?:string; onNotice:(message:string)=>void }
 type FriendData = { incoming:{id:string;sender:Person}[]; outgoing:{id:string;receiver:Person}[]; friends:Person[] }
-type Conversation = { id:string; members:{user:Person}[]; messages?:{content:string;createdAt:string;author:Person}[] }
+type Conversation = { id:string; members:{user:Person}[]; messages?:{id:string;content:string;createdAt:string;author:Person}[] }
 type DM = { id:string; content:string; createdAt:string; editedAt?:string|null; author:Person; attachments?:{id:string;fileName:string;size:number}[]; reactions?:{emoji:string;userId:string}[] }
 type Role = { id:string; name:string; color:string|null; permissions:Record<string,boolean> }
 type EventItem = { id:string; title:string; description:string|null; location:string|null; startsAt:string }
