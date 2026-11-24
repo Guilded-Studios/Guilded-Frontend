@@ -1412,7 +1412,7 @@
 
 /* Server workspace header actions */
 .header-server-name{display:inline-flex;align-items:center;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#8f969f;font-size:11px;font-weight:750;letter-spacing:.035em;padding-right:12px;margin-right:2px;border-right:1px solid #3a3d43}
-.server-header-action{height:32px;display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:0 11px;border:1px solid #3a3d43;border-radius:6px;background:#292c31;color:#c7cbd1;font:600 12px inherit;cursor:pointer;transition:background .14s,border-color .14s,color .14s}
+.server-header-action{height:32px;display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:0 11px;border:1px solid #3a3d43;border-radius:6px;background:#292c31;color:#c7cbd1;font:inherit;font-size:12px;font-weight:600;cursor:pointer;transition:background .14s,border-color .14s,color .14s}
 .server-header-action:hover:not(:disabled){background:#34373d;border-color:#555b65;color:#fff}
 .server-header-action:disabled{opacity:.4;cursor:not-allowed}
 .server-header-action svg{color:#e8b923}
