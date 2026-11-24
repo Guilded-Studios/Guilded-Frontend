@@ -1,5 +1,5 @@
 import { useEffect, useState, type FormEvent } from 'react'
-import { CalendarDays, Shield, Users, MessageCircle, ClipboardList, FolderPlus, Plus, Send, UserPlus, Check, X, Clock, Paperclip } from 'lucide-react'
+import { CalendarDays, Shield, Users, MessageCircle, ClipboardList, FolderPlus, Plus, Send, UserPlus, Check, X } from 'lucide-react'
 
 type Person = { id:string; username:string; displayName:string|null }
 type ServerInfo = { id:string; name:string }
