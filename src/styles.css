@@ -1362,3 +1362,19 @@
 .message-reactions button small{font-size:11px;font-weight:600}
 .message-edit-form textarea{border-radius:8px;background:var(--bg)}
 @media(hover:none){.message-actions{opacity:1;pointer-events:auto;transform:none}}
+
+
+/* Direct-message message actions, editing, and reactions */
+.dm-chat-feed .dm-message{position:relative;padding:12px 0 13px}
+.dm-message-byline{position:relative;display:flex;align-items:center;flex-wrap:wrap;gap:7px;padding-right:2px}
+.dm-message-byline>strong{font-size:11px}
+.dm-message-byline>small{color:var(--muted);font-size:9px}
+.dm-message-byline>time{margin-left:0;color:var(--muted);font-size:9px}
+.dm-message>p{margin:6px 0 0;font-size:12px;line-height:1.55;overflow-wrap:anywhere}
+.dm-message .message-actions{right:4px;top:-35px}
+.dm-message:hover .message-actions,.dm-message:focus-within .message-actions{opacity:1;pointer-events:auto;transform:translateY(0)}
+.dm-message .message-context-menu{top:0}
+.dm-message .message-emoji-picker{top:0}
+.dm-message .message-reactions{margin-top:8px}
+.dm-message .message-edit-form{margin-top:8px}
+@media(hover:none){.dm-message .message-actions{opacity:1;pointer-events:auto;transform:none}}
