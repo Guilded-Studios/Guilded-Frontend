@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react'
+import { io, type Socket } from 'socket.io-client'
 import { CalendarDays, Shield, MessageCircle, ClipboardList, FolderPlus, Plus, Send, UserPlus, Check, X, Trash2 } from 'lucide-react'
 
 type Person = { id:string; username:string; tag:string; displayName:string|null }
@@ -59,7 +60,12 @@ export default function CommunityHub({apiBase,server,user,presence,mode,initialT
  const [loading,setLoading]=useState(false)
  const dmFileRef=useRef<HTMLInputElement|null>(null)
  const dmFeedRef=useRef<HTMLDivElement|null>(null)
+ const dmSocketRef=useRef<Socket|null>(null)
+ const activeConversationIdRef=useRef<string|null>(null)
  useEffect(()=>{const feed=dmFeedRef.current;if(feed)feed.scrollTop=feed.scrollHeight},[dmMessages,activeConversation?.id])
+ useEffect(()=>{activeConversationIdRef.current=activeConversation?.id||null},[activeConversation?.id])
+ useEffect(()=>{if(mode!=='messages')return;const socket=io(new URL(apiBase).origin,{withCredentials:true});dmSocketRef.current=socket;socket.on('connect',()=>{if(activeConversationIdRef.current)socket.emit('conversation:join',activeConversationIdRef.current)});socket.on('direct-message:new',(payload:{conversationId:string;message:DM})=>{setConversations(current=>current.map(item=>item.id===payload.conversationId?{...item,messages:[payload.message]}:item));if(activeConversationIdRef.current===payload.conversationId)setDmMessages(current=>current.some(message=>message.id===payload.message.id)?current:[...current,payload.message])});socket.on('connect_error',()=>setError('Live direct messages are temporarily disconnected.'));return()=>{socket.disconnect();dmSocketRef.current=null}},[mode,apiBase])
+ useEffect(()=>{const socket=dmSocketRef.current;if(!socket||!activeConversation)return;const join=()=>socket.emit('conversation:join',activeConversation.id);if(socket.connected)join();else socket.once('connect',join);return()=>{socket.off('connect',join);socket.emit('conversation:leave',activeConversation.id)}},[activeConversation?.id,mode])
 
  async function loadFriends(){const [data,history]=await Promise.all([request<FriendData>(apiBase,'/friends'),request<{conversations:Conversation[]}>(apiBase,'/conversations')]);setFriends(data);setConversations(history.conversations)}
  async function loadConversation(id:string){const data=await request<{messages:DM[]}>(apiBase,'/conversations/'+id+'/messages');setDmMessages(data.messages)}
