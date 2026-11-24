@@ -1181,3 +1181,12 @@
 .rail-profile-button{width:42px;height:42px;flex:none;display:grid;place-items:center;padding:0;border:2px solid var(--line);border-radius:50%;background:var(--panel);cursor:pointer;transition:border-color .15s,background .15s}
 .rail-profile-button:hover{border-color:var(--accent);background:var(--hover)}
 .rail-profile-button .avatar{width:34px;height:34px;border-radius:50%;font-size:12px}
+
+
+/* Live presence indicators */
+.presence-avatar-wrap{position:relative;display:inline-flex;flex:none;width:max-content;height:max-content}
+.presence-dot{position:absolute;right:-1px;bottom:-1px;width:11px;height:11px;border:2px solid var(--sidebar,#202126);border-radius:50%;background:#747780;box-sizing:content-box}
+.presence-avatar-wrap.is-online .presence-dot{background:#36c879;box-shadow:0 0 0 1px rgba(54,200,121,.16)}
+.dm-list-item .presence-avatar-wrap .dm-list-avatar{display:grid}
+.members-directory-item .presence-avatar-wrap .avatar{display:grid}
+.members-directory-item .presence-avatar-wrap .presence-dot{border-color:var(--panel,#292a30)}
