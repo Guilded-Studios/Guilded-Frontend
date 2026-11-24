@@ -282,3 +282,6 @@
 
 
 .hub-conversation-list{display:grid;gap:4px;margin:0 0 12px;max-height:150px;overflow:auto}.hub-conversation-list button{display:grid;gap:4px;padding:8px 9px;border:1px solid var(--line);border-radius:5px;background:var(--bg);color:var(--text);text-align:left}.hub-conversation-list button:hover{border-color:#b99716;background:var(--panel-soft)}.hub-conversation-list span{font-size:10px;font-weight:700}.hub-conversation-list small{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--muted);font-size:9px}
+
+
+.message-attachment{display:flex;align-items:center;gap:7px;width:max-content;max-width:100%;margin:8px 0 3px;padding:8px 10px;border:1px solid var(--line);border-radius:6px;background:var(--panel-soft);color:var(--text);font-size:10px;text-align:left}.message-attachment svg{color:var(--accent);flex:none}.message-attachment small{color:var(--muted);font-size:9px}.message-reactions{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}.message-reactions button{display:flex;align-items:center;gap:5px;padding:3px 7px;border:1px solid var(--line);border-radius:12px;background:var(--panel-soft);color:var(--text);font-size:11px}.message-reactions button:hover{border-color:var(--accent)}.message-reactions small{font-size:9px;color:var(--muted)}
