@@ -1176,3 +1176,8 @@
 
 .hub-page:has(.dm-page-heading){display:flex;flex-direction:column;padding:0;overflow:hidden}
 .dm-workspace{height:auto;flex:1}
+
+/* Keep account profile access available in the direct-messages workspace. */
+.rail-profile-button{width:42px;height:42px;flex:none;display:grid;place-items:center;padding:0;border:2px solid var(--line);border-radius:50%;background:var(--panel);cursor:pointer;transition:border-color .15s,background .15s}
+.rail-profile-button:hover{border-color:var(--accent);background:var(--hover)}
+.rail-profile-button .avatar{width:34px;height:34px;border-radius:50%;font-size:12px}
