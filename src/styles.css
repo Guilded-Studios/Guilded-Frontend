@@ -1233,3 +1233,13 @@
 .self-status-editor button:disabled{opacity:.45;cursor:not-allowed}
 .self-profile-logout{display:flex;align-items:center;justify-content:center;gap:7px;width:100%;height:33px;margin-top:7px;border:1px solid #754047;border-radius:6px;background:#38272b;color:#e8a4a8;font-size:11px;font-weight:700;cursor:pointer}
 .self-profile-logout:hover{border-color:#a34d56;background:#4a2d32;color:#ffd0d2}
+
+
+/* Read-only self-profile preview from the server rail */
+.rail-profile-button{position:relative}
+.rail-profile-button .self-presence-indicator{position:absolute;right:3px;bottom:3px;width:10px;height:10px;margin:0;border-color:#1c2026}
+.rail-self-profile-card{left:60px;bottom:74px;width:276px}
+.rail-self-profile-card>.avatar{border-radius:17px}
+.rail-profile-presence{display:flex;align-items:center;gap:8px;margin-top:11px;color:#c5cbd3;font-size:11px;font-weight:650}
+.rail-profile-presence .self-presence-indicator{display:inline-block;width:9px;height:9px;margin:0;border:0}
+@media(max-width:560px){.rail-self-profile-card{left:58px;bottom:70px;width:min(260px,calc(100vw - 72px))}}
