@@ -1248,3 +1248,21 @@
 /* The unified rail profile card contains the full account controls. */
 .rail-self-profile-card{max-height:calc(100vh - 92px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
 .rail-self-profile-card .self-profile-controls{margin-top:12px}
+
+
+/* Member profile popovers: show real profile and server membership data. */
+.member-profile-popover{width:278px;padding:0 15px 15px;border-color:#454a53;background:#252a31;color:#f1f3f5}
+.profile-popover-banner{height:78px;background-position:center;background-size:cover}
+.member-profile-popover>.avatar{width:54px;height:54px;margin-top:-27px;border-radius:16px;border-color:#252a31}
+.member-profile-popover h3{margin:8px 0 3px;color:#f4f5f7;font-size:15px}
+.member-profile-popover>p{margin:0 0 8px;color:#aeb6c1;font-size:11px}
+.member-profile-status{margin:10px 0;padding:8px 10px;border-radius:6px;background:#1b2027;color:#e4e8ed;font-size:11px;line-height:1.45;overflow-wrap:anywhere}
+.member-profile-bio{margin:9px 0!important;color:#c6cbd2!important;font-size:11px!important;line-height:1.5}
+.member-profile-pronouns{display:inline-block;margin:0 0 8px;color:#929daa;font-size:10px}
+.member-profile-server-info{display:grid;gap:8px;margin:12px 0 2px;padding-top:11px;border-top:1px solid #3b424c}
+.member-profile-server-info>strong{color:#929daa;font-size:9px;letter-spacing:.7px}
+.member-profile-roles{display:flex;flex-wrap:wrap;gap:6px}
+.member-profile-server-info>small{color:#aeb6c1;font-size:10px}
+.member-profile-edit{display:flex;align-items:center;justify-content:center;gap:7px;width:100%;margin-top:13px}
+.member-profile-self .member-profile-server-info{display:none}
+@media(max-width:900px){.member-profile-popover{right:10px;top:100px}}
