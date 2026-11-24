@@ -1295,3 +1295,19 @@
 .dm-group-friend-options small,.dm-group-form>small{color:var(--text-secondary,#969ba5);font-size:11px}
 .dm-group-form>button{padding:8px 10px;border:0;border-radius:6px;background:#e8b923;color:#171717;font-weight:700;cursor:pointer}
 .dm-group-form>button:disabled{opacity:.45;cursor:not-allowed}
+
+
+/* Account security and session management */
+.account-session-toolbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:16px 0 10px}
+.account-session-toolbar>span{margin-right:auto;color:var(--text-secondary,#a8abb2);font-size:12px}
+.settings-secondary-button,.settings-danger-button{border:1px solid var(--border-color,#383c43);border-radius:6px;padding:7px 10px;background:var(--panel-background,#24272d);color:var(--text-primary,#eee);font:inherit;font-size:12px;cursor:pointer}
+.settings-danger-button{border-color:rgba(220,75,75,.35);color:#ef8585}
+.settings-secondary-button:disabled,.settings-danger-button:disabled{opacity:.45;cursor:not-allowed}
+.account-session-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 12px;margin:8px 0;border:1px solid var(--border-color,#343840);border-radius:8px;background:var(--panel-background,#202329)}
+.account-session-row>div{display:grid;gap:4px;min-width:0}
+.account-session-row strong{font-size:13px;color:var(--text-primary,#f1f1f1)}
+.account-session-row small{font-size:11px;color:var(--text-secondary,#a2a6af)}
+.account-session-current{font-size:11px;color:#e8b923;font-weight:700;white-space:nowrap}
+.account-security-note{display:flex;align-items:flex-start;gap:9px;margin-top:18px;padding:12px;border-radius:7px;background:rgba(232,185,35,.07);color:var(--text-secondary,#b7b9bf);font-size:12px;line-height:1.5}
+.account-security-note svg{flex:none;color:#e8b923}
+@media(max-width:620px){.account-session-row{align-items:flex-start;flex-direction:column}.account-session-toolbar{align-items:flex-start}.account-session-toolbar>span{width:100%}}
