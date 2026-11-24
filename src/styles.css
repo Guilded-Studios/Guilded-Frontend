@@ -1243,3 +1243,8 @@
 .rail-profile-presence{display:flex;align-items:center;gap:8px;margin-top:11px;color:#c5cbd3;font-size:11px;font-weight:650}
 .rail-profile-presence .self-presence-indicator{display:inline-block;width:9px;height:9px;margin:0;border:0}
 @media(max-width:560px){.rail-self-profile-card{left:58px;bottom:70px;width:min(260px,calc(100vw - 72px))}}
+
+
+/* The unified rail profile card contains the full account controls. */
+.rail-self-profile-card{max-height:calc(100vh - 92px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
+.rail-self-profile-card .self-profile-controls{margin-top:12px}
