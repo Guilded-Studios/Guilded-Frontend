@@ -724,3 +724,19 @@
 .privacy-switch{width:30px;height:16px;border:0;border-radius:12px;background:#777b85;opacity:.55}
 .guilded-settings-rows .settings-warning{margin-bottom:12px}
 @media(max-width:600px){.guilded-settings-page{grid-template-columns:105px minmax(0,1fr)}.guilded-settings-scroll{padding:0 10px 20px}.guilded-settings-nav{padding-left:5px;padding-right:5px}}
+
+
+/* Discord-style server header dropdown */
+.server-heading-wrap{position:relative;z-index:30;flex:0 0 auto}
+.server-heading{width:100%;cursor:pointer}
+.server-heading.menu-open{background:#292b30}
+.server-dropdown-menu{position:absolute;top:calc(100% + 5px);left:8px;width:min(286px,calc(100vw - 32px));z-index:90;padding:7px;background:#232428;border:1px solid #111214;border-radius:8px;box-shadow:0 12px 34px rgba(0,0,0,.48);color:#f2f3f5}
+.server-dropdown-title{padding:9px 10px 10px;font-size:14px;font-weight:750;border-bottom:1px solid #393b42;margin-bottom:6px}
+.server-dropdown-title small{display:block;margin-top:3px;color:#949ba4;font-size:10px;font-weight:500}
+.server-menu-search{height:34px;display:flex;align-items:center;gap:8px;padding:0 9px;margin:5px 2px 8px;background:#18191c;border:1px solid #111214;border-radius:5px;color:#949ba4}
+.server-menu-search input{width:100%;min-width:0;background:transparent;border:0;outline:0;color:#f2f3f5;font:inherit;font-size:11px}
+.server-dropdown-menu>button{width:100%;height:34px;display:flex;align-items:center;gap:10px;padding:0 10px;border:0;border-radius:4px;background:transparent;color:#dbdee3;text-align:left;font-size:12px;cursor:pointer}
+.server-dropdown-menu>button:hover:not(:disabled){background:#3f4248;color:#fff}
+.server-dropdown-menu>button:disabled{opacity:.4;cursor:not-allowed}
+.server-dropdown-divider{height:1px;background:#3b3d43;margin:6px 3px}
+.server-menu-dismiss{position:fixed;inset:0;z-index:80;border:0;background:transparent;cursor:default}
