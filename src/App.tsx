@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState, useRef, type FormEvent } from 'react'
 import { io, type Socket } from 'socket.io-client'
-import { Activity, Trash2, Bell, ChevronDown, Compass, Hash, Inbox, LogOut, MessageCircle, Moon, Plus, Search, Send, Settings, Sun, Users, X, ArrowRight, Lock, Mail, AtSign, Server as ServerIcon, Copy, Menu, Paperclip } from 'lucide-react'
+import { Activity, Trash2, Bell, ChevronDown, Compass, Hash, Inbox, LogOut, MessageCircle, Moon, Plus, Search, Send, Settings, Sun, Users, X, ArrowRight, Lock, Mail, AtSign, Server as ServerIcon, Copy, Menu, Paperclip, Shield } from 'lucide-react'
 import CommunityHub from './CommunityHub'
 
 type User={id:string;username:string;tag:string;discriminator?:string;displayName:string|null;email:string;createdAt:string}
