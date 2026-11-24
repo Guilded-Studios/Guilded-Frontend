@@ -110,7 +110,3 @@ export default function App(){
  </section></div>}
  </div>
 }
-}{modal==='settings'&&<><div className="modal-icon"><Settings/></div><h2>Profile settings</h2><p>Update how your name appears around Guilded.</p><form className="modal-form" onSubmit={saveProfile}><label>Display name<input value={profileName} onChange={e=>setProfileName(e.target.value)} maxLength={64} placeholder={user.username}/></label><div className="account-detail"><span>USERNAME</span><strong>@{user.username}#{user.tag}</strong></div><div className="account-detail"><span>EMAIL</span><strong>{user.email}</strong></div><button className="primary-button" disabled={busy}>{busy?'Saving…':'Save profile'} <ArrowRight size={16}/></button></form></>}
- </section></div>}
- </div>
-}
