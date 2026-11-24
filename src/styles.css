@@ -1279,3 +1279,19 @@
 .presence-avatar-wrap.presence-idle .presence-dot,.member-status-dot.presence-idle{background:#f0b232;box-shadow:0 0 0 1px rgba(240,178,50,.16)}
 .presence-avatar-wrap.presence-dnd .presence-dot,.member-status-dot.presence-dnd{background:#ed5b62;box-shadow:0 0 0 1px rgba(237,91,98,.16)}
 .presence-avatar-wrap.presence-offline .presence-dot,.member-status-dot.presence-offline{background:#747780;box-shadow:none}
+
+
+/* Direct-message group creation */
+.dm-group-create{padding:0 12px 12px;border-bottom:1px solid var(--border-color,#30343b)}
+.dm-group-toggle{width:100%;display:flex;align-items:center;gap:8px;padding:9px 10px;border:1px solid rgba(232,185,35,.28);border-radius:7px;background:rgba(232,185,35,.08);color:var(--text-primary,#f1f1f1);font:inherit;font-weight:600;cursor:pointer}
+.dm-group-toggle svg:last-child{margin-left:auto;color:#e8b923}
+.dm-group-form{display:grid;gap:9px;margin-top:10px;padding:11px;border:1px solid var(--border-color,#30343b);border-radius:8px;background:var(--panel-background,#202329)}
+.dm-group-form p{margin:0;color:var(--text-secondary,#a7abb3);font-size:12px}
+.dm-group-friend-options{display:grid;gap:3px;max-height:180px;overflow:auto}
+.dm-group-friend-options label{display:flex;align-items:center;gap:8px;padding:7px;border-radius:5px;cursor:pointer}
+.dm-group-friend-options label:hover{background:rgba(255,255,255,.045)}
+.dm-group-friend-options input{accent-color:#e8b923}
+.dm-group-friend-options span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-primary,#eee);font-size:13px}
+.dm-group-friend-options small,.dm-group-form>small{color:var(--text-secondary,#969ba5);font-size:11px}
+.dm-group-form>button{padding:8px 10px;border:0;border-radius:6px;background:#e8b923;color:#171717;font-weight:700;cursor:pointer}
+.dm-group-form>button:disabled{opacity:.45;cursor:not-allowed}
