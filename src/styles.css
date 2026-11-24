@@ -1333,3 +1333,32 @@
 .message-reactions button.message-reaction-add{min-width:27px;padding:0 5px;border-style:dashed;background:transparent;opacity:.72}
 .message-reactions button.message-reaction-add:hover{opacity:1;border-color:var(--accent);background:#e8b92312}
 @media(hover:none){.message-actions{opacity:1}}
+
+
+/* Discord-inspired message hover toolbar and emoji picker */
+.message{position:relative}
+.message-content{position:relative;min-width:0}
+.message-byline{position:relative;padding-right:2px}
+.message-actions{position:absolute;right:5px;top:-34px;z-index:5;display:flex;align-items:center;gap:3px;padding:4px;border:1px solid var(--line);border-radius:8px;background:var(--panel);box-shadow:0 5px 18px #0005;opacity:0;pointer-events:none;transform:translateY(3px);transition:opacity .12s ease,transform .12s ease}
+.message:hover .message-actions,.message:focus-within .message-actions{opacity:1;pointer-events:auto;transform:translateY(0)}
+.message-actions button{width:30px;height:28px;display:grid;place-items:center;border:0;border-radius:5px;background:transparent;color:var(--muted);cursor:pointer}
+.message-actions button:hover{background:#ffffff12;color:var(--text)}
+.message-context-menu{position:absolute;right:5px;top:0;z-index:8;min-width:158px;padding:5px;border:1px solid var(--line);border-radius:8px;background:var(--panel);box-shadow:0 8px 24px #0007}
+.message-context-menu button{width:100%;display:flex;align-items:center;gap:9px;padding:8px 9px;border:0;border-radius:5px;background:transparent;color:var(--text);text-align:left;font-size:12px;cursor:pointer}
+.message-context-menu button:hover{background:#ffffff10}
+.message-context-menu button.danger{color:#f18b8b}
+.message-emoji-picker{position:absolute;right:5px;top:0;z-index:9;width:min(320px,calc(100vw - 54px));padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--panel);box-shadow:0 12px 34px #0008}
+.emoji-picker-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;color:var(--text);font-size:12px}
+.emoji-picker-heading button{width:24px;height:24px;display:grid;place-items:center;border:0;border-radius:5px;background:transparent;color:var(--muted);cursor:pointer}
+.emoji-picker-heading button:hover{background:#ffffff12;color:var(--text)}
+.message-emoji-picker>input{width:100%;height:32px;margin-bottom:8px;padding:0 9px;border:1px solid var(--line);border-radius:6px;outline:0;background:var(--bg);color:var(--text);font:inherit;font-size:12px}
+.message-emoji-picker>input:focus{border-color:var(--accent)}
+.emoji-picker-grid{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:3px;max-height:190px;overflow-y:auto}
+.emoji-picker-grid button{height:32px;display:grid;place-items:center;border:0;border-radius:5px;background:transparent;font-size:19px;cursor:pointer}
+.emoji-picker-grid button:hover{background:#ffffff15;transform:scale(1.08)}
+.message-reactions{gap:5px;margin-top:7px}
+.message-reactions button{min-width:38px;height:26px;padding:0 7px;border-radius:999px;background:var(--panel);font-size:13px}
+.message-reactions button:hover{border-color:var(--accent);background:#e8b92312}
+.message-reactions button small{font-size:11px;font-weight:600}
+.message-edit-form textarea{border-radius:8px;background:var(--bg)}
+@media(hover:none){.message-actions{opacity:1;pointer-events:auto;transform:none}}
