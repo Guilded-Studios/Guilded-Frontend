@@ -1128,3 +1128,48 @@
 .hub-delete-button{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid rgba(214,91,91,.28);border-radius:6px;background:rgba(150,48,48,.12);color:#e58b8b;padding:6px 9px;font-size:12px;cursor:pointer}
 .hub-delete-button:hover:not(:disabled){background:rgba(180,55,55,.24);border-color:rgba(230,105,105,.55);color:#ffaaaa}
 .hub-delete-button:disabled{opacity:.5;cursor:not-allowed}
+
+
+/* Dedicated direct-messages workspace */
+.dm-page-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;padding:24px 28px 16px;border-bottom:1px solid var(--line);background:var(--bg)}
+.dm-page-heading h1{margin:6px 0 4px;font:700 22px 'Space Grotesk';color:var(--text)}
+.dm-page-heading p{margin:0;color:var(--muted);font-size:11px}
+.dm-page-tabs{display:flex;gap:8px;align-items:center}
+.dm-page-tabs button{display:flex;align-items:center;gap:7px;padding:9px 12px;border:1px solid transparent;border-radius:6px;background:transparent;color:var(--muted);font-size:11px;font-weight:650;white-space:nowrap}
+.dm-page-tabs button:hover{background:var(--hover);color:var(--text)}
+.dm-page-tabs button.active{border-color:#806923;background:#40371f;color:#f0d36e}
+.dm-page-tabs button span{display:grid;place-items:center;min-width:17px;height:17px;padding:0 4px;border-radius:9px;background:#e8b923;color:#211b0b;font-size:9px}
+.dm-workspace{display:grid;grid-template-columns:290px minmax(0,1fr);height:calc(100% - 103px);min-height:0;background:var(--bg)}
+.dm-list-sidebar{min-width:0;overflow:auto;padding:16px 12px;border-right:1px solid var(--line);background:var(--sidebar)}
+.dm-add-friend{padding:3px 2px 17px;border-bottom:1px solid var(--line)}
+.dm-add-friend label{display:block;margin:0 0 8px;color:var(--text);font-size:11px;font-weight:750}
+.dm-add-friend>div{display:flex;gap:6px}
+.dm-add-friend input{width:100%;min-width:0;height:34px;padding:0 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--text);font-size:11px;outline:none}
+.dm-add-friend input:focus{border-color:var(--accent)}
+.dm-add-friend button{width:36px;flex:none;display:grid;place-items:center;border:1px solid #927626;border-radius:6px;background:#d2aa34;color:#211b0b}
+.dm-list-section{padding:16px 0 8px}
+.dm-list-section h2{display:flex;align-items:center;justify-content:space-between;margin:0 5px 8px;color:var(--muted);font-size:10px;font-weight:800;letter-spacing:.7px;text-transform:uppercase}
+.dm-list-section h2 span{color:var(--subtle)}
+.dm-list-item{width:100%;display:flex;align-items:center;gap:9px;padding:8px 7px;border:0;border-radius:6px;background:transparent;color:var(--text);text-align:left}
+.dm-list-item:hover{background:var(--hover)}
+.dm-list-item.active{background:color-mix(in srgb,var(--accent) 14%,var(--panel));}
+.dm-list-item>svg{margin-left:auto;color:var(--muted)}
+.dm-list-avatar{width:34px;height:34px;flex:none;display:grid;place-items:center;border-radius:11px;background:#514526;color:#f0d36e;font-size:13px;font-weight:800}
+.dm-list-copy{display:grid;gap:3px;min-width:0;flex:1}
+.dm-list-copy strong{overflow:hidden;color:var(--text);font-size:11px;text-overflow:ellipsis;white-space:nowrap}
+.dm-list-copy small{overflow:hidden;color:var(--muted);font-size:9px;text-overflow:ellipsis;white-space:nowrap}
+.dm-list-empty{padding:6px 5px;color:var(--subtle);font-size:10px;line-height:1.5}
+.dm-chat-panel{display:flex;flex-direction:column;min-width:0;min-height:0;background:var(--bg)}
+.dm-chat-header{height:62px;flex:none;display:flex;align-items:center;gap:10px;padding:0 20px;border-bottom:1px solid var(--line)}
+.dm-chat-header>div{display:grid;gap:3px}.dm-chat-header strong{font-size:12px}.dm-chat-header small{color:var(--muted);font-size:9px}
+.dm-chat-feed{max-height:none;flex:1;padding:15px 24px}
+.dm-composer{margin:12px 20px 18px;padding:6px;border:1px solid var(--line);border-radius:8px;background:var(--panel)}
+.dm-composer input{border:0!important;background:transparent!important;outline:0!important}
+.dm-composer button{min-width:34px}
+.dm-welcome{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:25px;text-align:center}
+.dm-welcome>div{width:58px;height:58px;display:grid;place-items:center;border-radius:18px;background:color-mix(in srgb,var(--accent) 15%,var(--panel));color:var(--accent)}
+.dm-welcome h2{margin:18px 0 6px;font:700 17px 'Space Grotesk'}.dm-welcome p{max-width:340px;margin:0;color:var(--muted);font-size:11px;line-height:1.6}
+.dm-requests-page{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;max-width:1050px;margin:24px auto;padding:0 24px;align-items:start}
+.dm-requests-page .hub-card{background:var(--panel);border-color:var(--line)}
+@media(max-width:760px){.dm-page-heading{align-items:flex-start;flex-direction:column;padding:18px 15px 12px}.dm-workspace{grid-template-columns:220px minmax(0,1fr);height:calc(100% - 130px)}.dm-requests-page{grid-template-columns:1fr;padding:0 14px}}
+@media(max-width:560px){.dm-workspace{grid-template-columns:1fr;height:calc(100% - 130px)}.dm-list-sidebar{max-height:42%;border-right:0;border-bottom:1px solid var(--line)}.dm-chat-panel{min-height:320px}.dm-chat-feed{padding:12px}.dm-composer{margin:8px 10px 12px}.dm-page-tabs{width:100%}.dm-page-tabs button{flex:1;justify-content:center}}
