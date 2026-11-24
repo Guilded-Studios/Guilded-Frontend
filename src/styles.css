@@ -1272,3 +1272,10 @@
 .server-owner-crown{display:inline-block;flex:none;margin-left:6px;vertical-align:-2px;color:#e8b923;filter:drop-shadow(0 1px 2px rgba(232,185,35,.28));}
 .member strong .server-owner-crown-wrap .server-owner-crown{width:13px;height:13px}
 .members-directory-item strong .server-owner-crown-wrap .server-owner-crown{width:14px;height:14px}
+
+
+/* Live presence states in both server member views */
+.presence-avatar-wrap.presence-online .presence-dot,.member-status-dot.presence-online{background:#36c879;box-shadow:0 0 0 1px rgba(54,200,121,.16)}
+.presence-avatar-wrap.presence-idle .presence-dot,.member-status-dot.presence-idle{background:#f0b232;box-shadow:0 0 0 1px rgba(240,178,50,.16)}
+.presence-avatar-wrap.presence-dnd .presence-dot,.member-status-dot.presence-dnd{background:#ed5b62;box-shadow:0 0 0 1px rgba(237,91,98,.16)}
+.presence-avatar-wrap.presence-offline .presence-dot,.member-status-dot.presence-offline{background:#747780;box-shadow:none}
