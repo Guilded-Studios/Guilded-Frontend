@@ -1119,3 +1119,12 @@
 .guilded-settings-page .guilded-settings-rows .hub-muted-button:hover:not(:disabled){border-color:#777980!important;background:#3c3d44!important;color:#fff!important}
 .guilded-settings-page button:disabled{cursor:not-allowed;opacity:.48;filter:saturate(.55)}
 .guilded-settings-page button:focus-visible{outline:2px solid #f0cc58;outline-offset:2px}
+
+
+/* Destructive channel/category actions */
+.hub-category-heading,.hub-category-channel{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.hub-category-heading{margin-bottom:6px}
+.hub-category-channel{padding:5px 0 5px 12px}
+.hub-delete-button{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid rgba(214,91,91,.28);border-radius:6px;background:rgba(150,48,48,.12);color:#e58b8b;padding:6px 9px;font-size:12px;cursor:pointer}
+.hub-delete-button:hover:not(:disabled){background:rgba(180,55,55,.24);border-color:rgba(230,105,105,.55);color:#ffaaaa}
+.hub-delete-button:disabled{opacity:.5;cursor:not-allowed}
