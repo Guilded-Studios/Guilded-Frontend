@@ -1268,6 +1268,7 @@
 @media(max-width:900px){.member-profile-popover{right:10px;top:100px}}
 
 /* Guilded-style server owner marker */
+.server-owner-crown-wrap{display:inline-flex;align-items:center;flex:none;margin-left:6px;vertical-align:middle;cursor:help;color:#e8b923;filter:drop-shadow(0 1px 2px rgba(232,185,35,.28));}
 .server-owner-crown{display:inline-block;flex:none;margin-left:6px;vertical-align:-2px;color:#e8b923;filter:drop-shadow(0 1px 2px rgba(232,185,35,.28));}
-.member strong .server-owner-crown{width:13px;height:13px}
-.members-directory-item strong .server-owner-crown{width:14px;height:14px}
+.member strong .server-owner-crown-wrap .server-owner-crown{width:13px;height:13px}
+.members-directory-item strong .server-owner-crown-wrap .server-owner-crown{width:14px;height:14px}
