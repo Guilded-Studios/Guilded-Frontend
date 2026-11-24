@@ -790,3 +790,59 @@
 .profile-media-field small{display:block;color:var(--muted);font-size:11px;font-weight:400;margin-top:4px}
 .profile-file-input{display:none!important}
 .profile-banner-preview{width:100%;height:96px;border:1px solid var(--line);border-radius:8px;background:linear-gradient(135deg,var(--panel-soft),var(--hover));background-size:cover;background-position:center}
+
+
+/* Expanded Guilded server settings workspace */
+.guilded-settings-page{grid-template-columns:218px minmax(0,1fr);background:#2b2d31}
+.guilded-settings-nav{padding:0 12px 18px;background:#1e1f22;border-right:1px solid #151619}
+.settings-nav-brand{height:58px;min-height:58px;padding:0 8px;font-size:16px;gap:10px}
+.settings-nav-brand img{width:27px;height:27px}
+.settings-nav-title{padding:15px 8px 8px;font-size:10px;letter-spacing:.09em;color:#8f949e}
+.settings-nav-group{display:flex;flex-direction:column;gap:3px;margin:5px 0 13px}
+.settings-nav-group>small{padding:8px 8px 5px;color:#858b96;font-size:9px;font-weight:800;letter-spacing:.1em}
+.guilded-settings-nav> .settings-nav-group>button{height:36px;min-height:36px;display:flex;align-items:center;gap:11px;padding:0 10px;border-radius:6px;font-size:12px;color:#b9bec7}
+.guilded-settings-nav> .settings-nav-group>button svg{color:#9299a4;flex:none}
+.guilded-settings-nav> .settings-nav-group>button:hover{background:#303238;color:#fff}
+.guilded-settings-nav> .settings-nav-group>button.active{background:rgba(245,196,0,.13);color:#f5c400;outline:0;border-left:3px solid #f5c400;padding-left:7px}
+.guilded-settings-nav> .settings-nav-group>button.active svg{color:#f5c400}
+.guilded-settings-nav>.settings-back-button{height:38px;min-height:38px;display:flex;align-items:center;gap:9px;margin-top:auto;padding:0 10px;border:1px solid #34363c;border-radius:6px;color:#b5bac1;font-size:11px}
+.guilded-settings-scroll{padding:0 34px 42px;background:#2b2d31}
+.guilded-settings-scroll>.settings-banner{height:166px;display:flex;align-items:flex-end;margin:0 -34px 0;padding:0 34px;background:linear-gradient(115deg,#333943,#25282f 58%,#35302a);background-size:cover;background-position:center;border-bottom:1px solid #18191c}
+.settings-banner-art{width:min(100%,1040px);margin:0 auto;display:flex;align-items:center;gap:16px;padding-bottom:20px}
+.settings-banner-emblem{width:64px;height:64px;display:grid;place-items:center;overflow:hidden;border:3px solid #2b2d31;border-radius:15px;background:#3d414a;color:#f5c400;font-size:25px;font-weight:850;box-shadow:0 5px 18px #0005}
+.settings-banner-emblem img{width:100%;height:100%;object-fit:cover}
+.settings-banner-title{display:flex;flex-direction:column;gap:5px}
+.settings-banner-title strong{font-size:21px;letter-spacing:-.03em}
+.settings-banner-title small{font-size:9px;letter-spacing:.12em;color:#c0c4cc;font-weight:800}
+.settings-banner-open{margin-left:auto;padding:9px 13px;border:1px solid #686d77;border-radius:6px;background:#202227aa;color:#fff;font-size:11px;font-weight:700}
+.settings-banner-open:hover{background:#3b3e45}
+.settings-breadcrumb{height:54px;max-width:1040px;margin:0 auto 8px;font-size:11px}
+.settings-breadcrumb strong{font-size:14px}
+.guilded-settings-rows{max-width:900px;margin:22px auto;padding:0}
+.settings-section-heading{margin-bottom:22px}
+.settings-section-heading strong{font-size:20px;letter-spacing:-.025em}
+.settings-section-heading small{font-size:12px;max-width:660px;line-height:1.5}
+.guilded-settings-rows .settings-warning{padding:14px 16px;border:1px solid #65531b;border-radius:8px;background:rgba(245,196,0,.07);font-size:12px}
+.guilded-setting-row{min-height:76px;display:flex;align-items:center;gap:15px;padding:13px 15px;margin:0 0 8px;border:1px solid #3a3d44;border-radius:8px;background:#31343a}
+.setting-row-icon{width:34px;height:34px;display:grid;place-items:center;flex:none;border-radius:8px;background:#3c4048;color:#f5c400}
+.setting-row-copy{min-width:150px;flex:1}
+.setting-row-copy strong{font-size:13px}
+.setting-row-copy small{font-size:11px;line-height:1.45}
+.guilded-setting-row input,.guilded-setting-row select{width:min(42%,320px);min-width:150px;height:37px;padding:0 10px;border:1px solid #484c55;border-radius:6px;background:#24262b;color:#f2f3f5;font-size:12px}
+.guilded-setting-row input:focus,.guilded-setting-row select:focus{outline:1px solid #f5c400;border-color:#f5c400}
+.guilded-setting-row .setting-row-value{font-size:12px;color:#c0c5cd}
+.guilded-setting-row button{padding:8px 12px;border:1px solid #555b65;border-radius:6px;background:#393d45;color:#f2f3f5;font-size:11px}
+.guilded-setting-row.danger-row{border-color:#653438;background:#352b2e}
+.guilded-setting-row.danger-row .setting-row-icon{background:#4c3034;color:#f23f43}
+.settings-page-actions{position:sticky;bottom:-42px;display:flex;justify-content:flex-end;padding:14px 0;background:linear-gradient(transparent,#2b2d31 25%)}
+.privacy-settings{max-width:900px}
+.privacy-choice{min-height:70px;align-items:center;padding:14px 16px;margin-bottom:8px;border-radius:8px;background:#31343a;border-color:#3b3e45}
+.privacy-choice strong{font-size:13px}
+.privacy-choice small{font-size:11px;line-height:1.5}
+.privacy-radio{width:17px;height:17px;min-width:17px}
+.privacy-discoverable{padding:16px;border:1px solid #3b3e45;border-radius:8px;background:#31343a}
+.privacy-discoverable strong{font-size:13px}
+.privacy-discoverable small{font-size:11px}
+.settings-info-server-icon img{object-fit:cover}
+@media(max-width:760px){.guilded-settings-page{grid-template-columns:165px minmax(0,1fr)}.guilded-settings-scroll{padding-left:16px;padding-right:16px}.guilded-settings-scroll>.settings-banner{margin-left:-16px;margin-right:-16px;padding-left:16px;padding-right:16px}.settings-banner-emblem{width:48px;height:48px}.settings-banner-title strong{font-size:16px}.guilded-setting-row{flex-wrap:wrap}.setting-row-copy{min-width:calc(100% - 54px)}.guilded-setting-row input,.guilded-setting-row select{width:100%;margin-left:49px}}
+@media(max-width:520px){.guilded-settings-page{grid-template-columns:125px minmax(0,1fr)}.guilded-settings-nav{padding-left:5px;padding-right:5px}.guilded-settings-nav>.settings-nav-group>button{font-size:10px;gap:5px;padding-left:6px}.settings-nav-group>small{font-size:8px}.settings-banner-open{font-size:9px;padding:7px}.settings-banner-emblem{width:40px;height:40px}}
