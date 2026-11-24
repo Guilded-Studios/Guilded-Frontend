@@ -1378,3 +1378,5 @@
 .dm-message .message-reactions{margin-top:8px}
 .dm-message .message-edit-form{margin-top:8px}
 @media(hover:none){.dm-message .message-actions{opacity:1;pointer-events:auto;transform:none}}
+
+.dm-message{display:flex;align-items:flex-start;gap:12px}.dm-message-avatar{width:38px;height:38px;flex:0 0 38px;display:grid;place-items:center;overflow:hidden;border-radius:50%;background:linear-gradient(145deg,#6c7482,#39414d);color:#fff;font-size:14px;font-weight:700}.dm-message-avatar img{width:100%;height:100%;object-fit:cover}.dm-message-body{position:relative;min-width:0;flex:1}.dm-message-byline{min-height:24px}.dm-message-body>p{margin:5px 0 0;font-size:12px;line-height:1.55;overflow-wrap:anywhere}.dm-message-body .message-context-menu,.dm-message-body .message-emoji-picker{right:4px}.dm-message-body .message-reactions{margin-top:8px}.dm-message-body .message-edit-form{margin-top:8px}@media(max-width:480px){.dm-message{gap:9px}.dm-message-avatar{width:32px;height:32px;flex-basis:32px}}
