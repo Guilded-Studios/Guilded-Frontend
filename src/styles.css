@@ -1311,3 +1311,25 @@
 .account-security-note{display:flex;align-items:flex-start;gap:9px;margin-top:18px;padding:12px;border-radius:7px;background:rgba(232,185,35,.07);color:var(--text-secondary,#b7b9bf);font-size:12px;line-height:1.5}
 .account-security-note svg{flex:none;color:#e8b923}
 @media(max-width:620px){.account-session-row{align-items:flex-start;flex-direction:column}.account-session-toolbar{align-items:flex-start}.account-session-toolbar>span{width:100%}}
+
+
+/* Channel message actions, inline editing, and reactions */
+.message-byline{flex-wrap:wrap}
+.message-actions{display:inline-flex;align-items:center;gap:3px;margin-left:auto;opacity:0;transition:opacity .15s ease}
+.message:hover .message-actions,.message:focus-within .message-actions{opacity:1}
+.message-actions button{width:25px;height:24px;display:grid;place-items:center;border:1px solid transparent;border-radius:6px;background:transparent;color:#929ba5;cursor:pointer}
+.message-actions button:hover{background:#ffffff0d;border-color:#ffffff12;color:var(--text)}
+.message-actions button:last-child:hover{color:#f08b8b}
+.message-edit-form{display:flex;flex-direction:column;gap:7px;margin-top:7px}
+.message-edit-form textarea{width:100%;min-height:64px;resize:vertical;padding:9px 10px;border:1px solid var(--accent);border-radius:8px;background:var(--panel);color:var(--text);font:inherit;font-size:13px;outline:0}
+.message-edit-form>div{display:flex;justify-content:flex-end;gap:7px}
+.message-edit-form button{padding:6px 10px;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--text);font-size:11px;cursor:pointer}
+.message-edit-form button:last-child{border-color:var(--accent);background:var(--accent);color:#211b0c;font-weight:700}
+.message-edit-form button:disabled{opacity:.45;cursor:not-allowed}
+.message-reactions{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+.message-reactions button{min-width:34px;height:27px;padding:0 7px;display:inline-flex;align-items:center;justify-content:center;gap:5px;border:1px solid var(--line);border-radius:7px;background:var(--panel);color:var(--text);font-size:13px;cursor:pointer}
+.message-reactions button small{font-size:10px;color:var(--muted)}
+.message-reactions button.selected{border-color:#e8b92399;background:#e8b92318;color:#f3d477}
+.message-reactions button.message-reaction-add{min-width:27px;padding:0 5px;border-style:dashed;background:transparent;opacity:.72}
+.message-reactions button.message-reaction-add:hover{opacity:1;border-color:var(--accent);background:#e8b92312}
+@media(hover:none){.message-actions{opacity:1}}
