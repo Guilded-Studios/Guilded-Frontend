@@ -1046,3 +1046,52 @@
 .guilded-settings-rows .hub-role,.guilded-settings-rows .hub-person,.guilded-settings-rows .hub-category,.guilded-settings-rows .hub-event,.guilded-settings-rows .hub-application,.guilded-settings-rows .hub-audit-row{border-color:#3a414b}
 @media(max-width:760px){.guilded-settings-page{grid-template-columns:188px minmax(0,1fr)}.guilded-settings-nav{padding-left:9px;padding-right:9px}.guilded-settings-scroll{padding-left:15px;padding-right:15px}.settings-topbar-identity strong{font-size:14px}}
 @media(max-width:560px){.guilded-settings-page{grid-template-columns:145px minmax(0,1fr)}.guilded-settings-nav{padding-left:5px;padding-right:5px}.settings-nav-brand{padding-left:5px;font-size:14px}.settings-nav-title{padding-left:5px;font-size:8px}.settings-nav-group>small{padding-left:5px;font-size:8px}.guilded-settings-nav>.settings-nav-group>button{gap:6px;padding-left:6px;font-size:10px}.guilded-settings-nav>.settings-nav-group>button.active{padding-left:4px}.guilded-settings-scroll{padding-left:11px;padding-right:11px}.settings-page-topbar{min-height:65px}.settings-topbar-mark{width:32px;height:32px}.settings-topbar-back{height:31px;padding:0 7px;font-size:9px}.settings-breadcrumb{height:45px}.guilded-settings-rows{margin-top:18px}.guilded-setting-row{gap:9px}.guilded-setting-row input,.guilded-setting-row select{margin-left:44px;width:calc(100% - 44px)}}
+
+
+/* Guilded server-management detail polish */
+.guilded-settings-rows{width:100%;max-width:100%;padding:18px 0 30px}
+.guilded-settings-rows .hub-page{max-width:100%;margin:0 auto 24px}
+.guilded-settings-rows .hub-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin:0 0 18px;padding:0 0 16px;border-bottom:1px solid #3a3b40}
+.guilded-settings-rows .hub-eyebrow{display:block;margin-bottom:7px;color:#d5b33c;font-size:9px;font-weight:800;letter-spacing:1.15px}
+.guilded-settings-rows .hub-heading h1{margin:0 0 5px;color:#f4f4f5;font-size:21px;line-height:1.25;font-weight:750}
+.guilded-settings-rows .hub-heading p{max-width:580px;margin:0;color:#a5a7ae;font-size:11px;line-height:1.6}
+.guilded-settings-rows .hub-tabs{display:flex;gap:18px;margin:0 0 17px;border-bottom:1px solid #3a3b40}
+.guilded-settings-rows .hub-tabs button{height:36px;padding:0 2px;border:0;border-bottom:2px solid transparent;background:transparent;color:#a5a7ae;font-size:10px;font-weight:650}
+.guilded-settings-rows .hub-tabs button:hover{color:#fff}
+.guilded-settings-rows .hub-tabs button.active{color:#f4d15a;border-bottom-color:#e8b923}
+.guilded-settings-rows .hub-grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(260px,.92fr);gap:12px;align-items:start}
+.guilded-settings-rows .hub-card{min-width:0;padding:17px 18px;border:1px solid #3b3c41;border-radius:5px;background:#2c2d32;box-shadow:0 2px 7px #00000012}
+.guilded-settings-rows .hub-card h2{display:flex;align-items:center;gap:8px;margin:0 0 13px;padding:0 0 11px;border-bottom:1px solid #3b3c41;color:#f0f0f2;font-size:12px;font-weight:750}
+.guilded-settings-rows .hub-card h2 svg{color:#d9b63d}
+.guilded-settings-rows .hub-card h2 span{margin-left:auto;color:#a5a7ae;font-size:10px}
+.guilded-settings-rows .hub-card h3{margin:15px 0 9px;color:#e5e5e7;font-size:10px;font-weight:750}
+.guilded-settings-rows .hub-card p,.guilded-settings-rows .hub-card small{color:#a5a7ae}
+.guilded-settings-rows .hub-subheading{margin-top:20px!important}
+.guilded-settings-rows .hub-role,.guilded-settings-rows .hub-person,.guilded-settings-rows .hub-category,.guilded-settings-rows .hub-event,.guilded-settings-rows .hub-application,.guilded-settings-rows .hub-audit-row{border-color:#3d3e44}
+.guilded-settings-rows .hub-role{min-height:43px;padding:7px 3px}
+.guilded-settings-rows .hub-role strong,.guilded-settings-rows .hub-person strong,.guilded-settings-rows .hub-category strong,.guilded-settings-rows .hub-event strong,.guilded-settings-rows .hub-application strong,.guilded-settings-rows .hub-audit-row strong{color:#e9e9eb;font-size:10px}
+.guilded-settings-rows .hub-role small,.guilded-settings-rows .hub-person small,.guilded-settings-rows .hub-category small,.guilded-settings-rows .hub-event time,.guilded-settings-rows .hub-application small,.guilded-settings-rows .hub-audit-row small{color:#a0a2aa;font-size:9px}
+.guilded-settings-rows .hub-role button,.guilded-settings-rows .hub-person button,.guilded-settings-rows .hub-actions button,.guilded-settings-rows .hub-form button,.guilded-settings-rows .hub-inline-form button{min-height:29px;padding:0 11px;border:1px solid #67551e;border-radius:4px;background:#40371f;color:#f0d36e;font-size:9px;font-weight:700}
+.guilded-settings-rows .hub-role button:hover,.guilded-settings-rows .hub-person button:hover,.guilded-settings-rows .hub-actions button:hover,.guilded-settings-rows .hub-form button:hover,.guilded-settings-rows .hub-inline-form button:hover{background:#514322}
+.guilded-settings-rows .hub-form{display:flex;flex-direction:column;gap:12px}
+.guilded-settings-rows .hub-form>label{display:flex;flex-direction:column;gap:6px;color:#bfc0c5;font-size:9px;font-weight:700}
+.guilded-settings-rows .hub-form input:not([type=checkbox]):not([type=color]),.guilded-settings-rows .hub-form select,.guilded-settings-rows .hub-form textarea,.guilded-settings-rows .hub-inline-form input,.guilded-settings-rows .hub-person select{min-width:0;min-height:34px;padding:8px 10px;border:1px solid #45464d;border-radius:4px;background:#222328;color:#f0f0f2;font:500 10px inherit;outline:none}
+.guilded-settings-rows .hub-form input:focus,.guilded-settings-rows .hub-form select:focus,.guilded-settings-rows .hub-form textarea:focus,.guilded-settings-rows .hub-inline-form input:focus{border-color:#b99a27}
+.guilded-settings-rows .hub-form input[type=color]{width:48px;height:32px;padding:3px;border:1px solid #45464d;border-radius:4px;background:#222328}
+.guilded-settings-rows .hub-form textarea{min-height:76px;resize:vertical}
+.guilded-settings-rows .hub-permissions{display:grid;grid-template-columns:1fr 1fr;gap:5px 9px;padding:10px;border:1px solid #3d3e44;border-radius:4px;background:#25262b}
+.guilded-settings-rows .hub-permissions label{display:flex;align-items:center;gap:7px;min-width:0;color:#c2c3c8;font-size:9px}
+.guilded-settings-rows .hub-permissions input,.guilded-settings-rows .hub-check-row input{accent-color:#e8b923}
+.guilded-settings-rows .hub-inline-form{display:flex;gap:7px}
+.guilded-settings-rows .hub-inline-form input{flex:1}
+.guilded-settings-rows .hub-person{gap:10px;min-height:46px;padding:7px 2px}
+.guilded-settings-rows .hub-person>div:not(.hub-avatar){min-width:0}
+.guilded-settings-rows .hub-person select{max-width:48%;min-height:29px}
+.guilded-settings-rows .hub-category{display:flex;flex-direction:column;gap:7px;padding:11px 3px}
+.guilded-settings-rows .hub-category>span{padding:5px 9px;border-radius:3px;background:#25262b;color:#c3c4c9;font-size:9px}
+.guilded-settings-rows .hub-event,.guilded-settings-rows .hub-application,.guilded-settings-rows .hub-audit-row{padding:11px 2px}
+.guilded-settings-rows .hub-empty{padding:17px 10px;border:1px dashed #44454b;border-radius:4px;color:#a5a7ae;text-align:center;font-size:10px;line-height:1.6}
+.guilded-settings-rows .hub-error{margin:0 0 12px;padding:10px 12px;border:1px solid #754044;border-radius:4px;background:#3a282b;color:#f0b0b3;font-size:10px}
+.guilded-settings-rows .hub-muted-button{border-color:#45464d!important;background:#292a2f!important;color:#c1c2c7!important}
+@media(max-width:760px){.guilded-settings-rows .hub-grid{grid-template-columns:minmax(0,1fr)}.guilded-settings-rows .hub-card{padding:14px}.guilded-settings-rows .hub-permissions{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.guilded-settings-rows .hub-heading h1{font-size:18px}.guilded-settings-rows .hub-tabs{gap:12px;overflow-x:auto}.guilded-settings-rows .hub-tabs button{white-space:nowrap}.guilded-settings-rows .hub-permissions{grid-template-columns:1fr}.guilded-settings-rows .hub-person{flex-wrap:wrap}.guilded-settings-rows .hub-person select{max-width:100%}}
