@@ -289,3 +289,58 @@
 .hub-form .hub-check-row{display:flex;align-items:center;gap:8px}.hub-form .hub-check-row input{width:auto;accent-color:var(--accent)}
 
 .hub-apply-button{width:100%;margin-top:10px;padding:9px 12px;border:1px solid var(--line);border-radius:6px;background:var(--panel-soft);color:var(--text);font-size:10px}
+
+
+/* Discord + classic Guilded workspace layout */
+.app-shell{--bg:#292a2f;--rail:#1e1f23;--sidebar:#25262b;--panel:#313238;--panel-soft:#38393f;--hover:#404148;--text:#f2f2f3;--muted:#b5b6bc;--subtle:#85868e;--line:rgba(255,255,255,.075);--accent:#f5c400;--accent-strong:#d9ad00}
+.server-rail{width:56px;gap:8px;padding:10px 0;background:#1e1f23}
+.rail-icon,.server-icon,.server-add{width:38px;height:38px;border-radius:12px}
+.channel-sidebar{width:236px;background:#25262b}
+.server-heading{height:52px;padding:0 11px;border-bottom:1px solid #17181c;box-shadow:0 1px 2px #0002}
+.server-heading-mark{width:30px;height:30px;border-radius:9px}
+.server-heading-copy strong{font-size:12px}
+.server-heading-copy small{font-size:10px}
+.sidebar-search{height:30px;margin:10px 9px 7px;border:0;border-radius:5px;background:#1f2025}
+.server-quick-actions{padding:3px 9px 9px;border:0}
+.server-quick-actions button{height:28px;background:#303137;border-radius:5px;font-size:10px}
+.server-nav-shortcuts{display:flex;gap:5px;padding:0 9px 8px;border-bottom:1px solid var(--line)}
+.server-nav-shortcuts button{height:27px;min-width:0;flex:1;display:flex;align-items:center;justify-content:center;gap:5px;padding:0 6px;border:0;border-radius:5px;background:transparent;color:#aeb0b7;font-size:9px;white-space:nowrap}
+.server-nav-shortcuts button:hover,.server-nav-shortcuts button.active{background:#37383f;color:#f3f3f4}
+.server-nav-shortcuts button small{color:#d9ad00;font-size:9px}
+.channel-list{padding:8px 7px}
+.channel-group{margin:5px 0 12px}
+.channel-category{height:23px;padding:0 7px;color:#92949c;font-size:9px;letter-spacing:.55px}
+.channel-item{height:30px;margin:1px 0;padding:0 8px;border-radius:5px;color:#b7b8bf;font-size:11px}
+.channel-item.chosen{background:#3a3b42;color:#fff}
+.channel-item.chosen svg{color:#f5c400}
+.user-panel{height:52px;background:#202126;border-top:1px solid #17181c}
+.chat-panel{background:#292a2f}
+.chat-header{height:50px;padding:0 16px;background:#292a2f;border-bottom:1px solid var(--line)}
+.channel-title strong{font-size:13px}
+.channel-topic{font-size:10px;color:#a7a8af}
+.message-scroll{padding:23px 22px 12px}
+.channel-welcome{padding-bottom:20px}
+.channel-welcome h1{font-size:21px}
+.channel-welcome p{font-size:12px}
+.messages{gap:17px}
+.message{gap:10px}
+.message .avatar{width:36px;height:36px;border-radius:50%}
+.message-byline strong{font-size:12px}
+.message-content p{font-size:12px}
+.composer{min-height:48px;margin:7px 18px 0;border:0;border-radius:8px;background:#38393f}
+.composer-hint{height:25px;padding:5px 20px;font-size:9px}
+.member-sidebar{width:205px;padding:0 9px;background:#25262b;border-left:1px solid #1b1c20}
+.member-header{height:50px;padding:0 5px;border-bottom:1px solid var(--line)}
+.member-header strong{font-size:11px;color:#d5d6da}
+.member-header span{font-size:10px}
+.member-role-list{margin:10px 0}
+.member-role-group{margin:11px 0 15px}
+.member-role-group>small{font-size:9px;letter-spacing:.6px;color:#92949c}
+.member-role-group .member{gap:8px;padding:5px 3px;border-radius:5px}
+.member-role-group .member .avatar{width:27px;height:27px;border-radius:50%;font-size:10px}
+.member-role-group .member strong{font-size:10px}
+.member-role-group .member small{font-size:9px;color:#9698a0}
+.member-role-group .member:hover{background:#36373d}
+@media(max-width:1050px){.member-sidebar{width:185px}.channel-sidebar{width:220px}}
+@media(max-width:800px){.member-sidebar{display:none}.channel-sidebar{width:220px}}
+@media(max-width:600px){.server-rail{width:52px}.channel-sidebar{width:210px}.chat-header{height:48px}}
