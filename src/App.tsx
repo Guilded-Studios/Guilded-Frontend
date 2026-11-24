@@ -104,7 +104,7 @@ export default function App(){
   try{
    const signed=await api<{storageKey:string;uploadUrl:string;publicUrl:string;mimeType:string}>('/users/me/media/sign',{method:'POST',body:JSON.stringify({kind,fileName:file.name,mimeType:file.type,size:file.size})});
    const uploaded=await fetch(signed.uploadUrl,{method:'PUT',headers:{'Content-Type':signed.mimeType},body:file});
-   if(!uploaded.ok)throw new Error('Storage could not upload this image.');
+   if(!uploaded.ok){const detail=await uploaded.text().catch(()=> '');throw new Error('Image upload failed ('+uploaded.status+'). '+(detail.slice(0,240)||'Storage rejected the image.'));}
    const field=kind==='avatar'?'avatarUrl':'bannerUrl';
    const updated=await api<{user:User}>('/users/me',{method:'PATCH',body:JSON.stringify({[field]:signed.publicUrl})});
    setUser(updated.user);
