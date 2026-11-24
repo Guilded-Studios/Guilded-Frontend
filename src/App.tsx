@@ -6,8 +6,8 @@ import CommunityHub from './CommunityHub'
 type User={id:string;username:string;tag:string;discriminator?:string;displayName:string|null;email:string;createdAt:string}
 type Channel={id:string;name:string;type:'TEXT'|'ANNOUNCEMENT';position:number}
 type Server={id:string;name:string;description:string|null;ownerId:string;inviteCode?:string;channels?:Channel[];_count?:{members:number}}
-type Message={id:string;content:string;createdAt:string;editedAt?:string|null;author:{id:string;username:string;displayName:string|null};attachments?:{id:string;fileName:string;size:number;mimeType:string}[];reactions?:{emoji:string;userId:string}[]}
-type ServerMember={id:string;role:'OWNER'|'ADMIN'|'MODERATOR'|'MEMBER';joinedAt:string;user:{id:string;username:string;displayName:string|null}}
+type Message={id:string;content:string;createdAt:string;editedAt?:string|null;author:{id:string;username:string;tag:string;displayName:string|null};attachments?:{id:string;fileName:string;size:number;mimeType:string}[];reactions?:{emoji:string;userId:string}[]}
+type ServerMember={id:string;role:'OWNER'|'ADMIN'|'MODERATOR'|'MEMBER';joinedAt:string;user:{id:string;username:string;tag:string;displayName:string|null}}
 type Err={error?:{message?:string}}
 const API=(import.meta.env.VITE_API_URL||'http://localhost:4000/api/v1').replace(/\/$/,'')
 async function api<T>(path:string,init:RequestInit={}):Promise<T>{const r=await fetch(API+path,{...init,credentials:'include',headers:{'Content-Type':'application/json',...init.headers}});if(!r.ok){let m='Request failed ('+r.status+')';try{m=(await r.json() as Err).error?.message||m}catch{}throw new Error(m)}if(r.status===204)return undefined as T;return r.json() as Promise<T>}
