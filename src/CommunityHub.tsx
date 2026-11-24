@@ -3,7 +3,7 @@ import { CalendarDays, Shield, MessageCircle, ClipboardList, FolderPlus, Plus, S
 
 type Person = { id:string; username:string; tag:string; displayName:string|null }
 type ServerInfo = { id:string; name:string }
-type PresenceInfo = { id:string; status:'ONLINE'|'OFFLINE' }
+type PresenceInfo = { id:string; status:'ONLINE'|'IDLE'|'DND'|'OFFLINE' }
 type Props = { apiBase:string; server:ServerInfo|null; user:Person; presence:Record<string,PresenceInfo>; mode:'messages'|'management'; initialTab?:string; onNotice:(message:string)=>void }
 type FriendData = { incoming:{id:string;sender:Person}[]; outgoing:{id:string;receiver:Person}[]; friends:Person[] }
 type Conversation = { id:string; members:{user:Person}[]; messages?:{content:string;createdAt:string;author:Person}[] }
